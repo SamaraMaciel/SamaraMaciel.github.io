@@ -4,34 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Janelle's Page</title>
-    <style>
-        table {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
+    <link rel="stylesheet" href="./janelle.css">
 
-        td,th {
-            border: 1px solid black;}
-    </style>
-    <nav>
-        <a href="index.html">Main Page</a>
-        <a href="samara.html">Samara's Page</a>
-        <a href="laarni.html">Laarni's Page</a>
-        <a href="Sydneypage.html">Sydney's Page</a>     
-    </nav>
-    <h1>Oatmeal Chocolate Chip Cookies</h1>
+    <!--Nav and Title-->
+    <section>
+        <nav>
+            <button><a href="index.html"><b>Main Page</b></a></button>
+            <button><a href="samara.html">Samara's Page</a></button>
+            <button><a href="laarni.html">Laarni's Page</a></button>
+            <button><a href="Sydneypage.html">Sydney's Page</a></button>   
+        </nav>
+        <h1>Oatmeal Chocolate Chip Cookies</h1>
+    </section>    
 </head>
 
 <body>
     <!--Table of Contents-->
     <section>
-        <h3>Table of Contents</h3>
-        <a href="#Intro">Introduction</a>
-        <a href="#Recipe">Ingredients and Recipe</a>
+        <!--New element-->
+        <menu>
+            <h3>Table of Contents</h3>
+            <li><a href="#Intro">Introduction</a></li>
+            <li><a href="#Recipe">Ingredients and Recipe</a></li>
+            <li><a href="#Storing">Storing</a></li>
+            <li><a href="#Freezing">Freezing</a></li>
+        </menu>
     </section>
     <!--Picture and info-->
     <section>
-        <h2>Janelle's Favourite Food</h2>
+        <h2>Janelle's Page</h2>
         <h3 id="Intro">Introduction</h3>
         <p>One of my favourit foods are the oatmeal chocolate chip cookies that is from a recipe that my mom got from somewhere. They are one of the most popular kinds of cookie. Basically just regular chocolate chip cookies with oats, and I like to add walnuts. My mom used to make them sometimes and then when I learned to bake they were one of the first things I made. I still like making them quite often and everyone else that lives with me likes it when I make them too.</p>
         <img src="Cookies.JPG" alt="Chocolate Chip Cookies" width="25%">
@@ -105,7 +106,7 @@
             </tbody>
         </table>
     </section>
-    <!--Stepts for the recipe-->
+    <!--Steps for the recipe-->
     <section>
         <h3>Instructions</h3>
         <h3>Step 1</h3>
@@ -118,6 +119,16 @@
         <p>Mix in quick oats, chocolate chips and if desired the walnuts.</p>
         <h3>Step 5</h3>
         <p>Put cookies on greased cookie sheet and bake in oven at 375&deg for 10 minutes.</p>
+    </section>
+    <!--Section for stuff about storing cookies-->
+    <section>
+        <h2 id="Storing">Storing</h2>
+        <p>Store cookies in airtight container to keep them fresh, but first make sure that they have cooled off completely. Otherwise you will be trapping heat inside your container. Putting parchment paper or waxed paper between your cookies can help so that they don't stick together when storing. They can last in room temperature for a short period of time, but keeping them in a colder place keeps them fresher longer.</p> 
+    </section>
+    <!--Section for stuff about baking cookies-->
+    <section>
+        <h2 id="Freezing">Freezing</h2>
+        <p>You can definitely freeze your cookies in the airitght container. This way they can stay good for even several months. We like to freeze our cookies so that they last a long time. Plus it's nice sometimes to just take one out at a time to have an easy sweet treat.</p>
     </section>
 </body>
 </html>
