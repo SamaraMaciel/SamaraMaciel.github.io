@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .header {
     background-color: #3B1E54;
     color: white;
@@ -39,6 +40,10 @@ img{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-bottom: 20px;
     border: solid black;
+=======
+body{
+    background-color: #FFEBB2;
+>>>>>>> Stashed changes
 }
 
 table, th, td{
@@ -49,6 +54,7 @@ table, th, td{
     text-align: center;
 }
 
+<<<<<<< Updated upstream
 .footer{
     margin-bottom: 0%;
     background-color: black;
@@ -66,3 +72,29 @@ blockquote {
 
 
 
+=======
+img{
+    height: 30%;
+    width: 300px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.how{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+
+}
+
+.how > div {
+    background-color: #E9A89B;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+{
+>>>>>>> Stashed changes
