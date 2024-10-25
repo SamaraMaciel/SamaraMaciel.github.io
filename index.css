@@ -1,0 +1,93 @@
+body {
+    /* Start Samara's contribution */
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto 800px auto;
+    /* End Samara's contribution */
+}
+
+.top {
+    /* Start Samara's contribution */
+    font-size: .8125rem;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border: 3px;
+    margin-bottom: 5px;
+    /* End Samara's contribution */
+}
+
+header {
+    /* Start Samara's contribution */
+    display: block;
+    background-color:aliceblue;
+    height: 50px;
+   /* End Samara's contribution */
+}
+
+footer{
+    background-color: lightcyan;
+}
+
+nav{
+    /* Start Samara's contribution */
+    height: 50px;
+    
+    /* End Samara's contribution */
+}
+
+.navbar{
+    /* Start Samara's contribution */
+    position: sticky;
+    top: 0px;
+    /* End Samara's contribution */
+}
+
+.navclass{
+    /* Start Samara's contribution */
+    position:static;
+    display:flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    /* End Samara's contribution */
+}
+
+.navlinks{
+    /* Start Samara's contribution */
+    list-style: none;
+    display: inline-block;
+    justify-items: center;
+    align-items: center;
+    padding-inline-start: 0px;
+    margin: auto;
+    /* End Samara's contribution */
+}
+
+
+a:link	{
+    /* Start Samara's contribution */
+    display: block;
+    /* End Samara's contribution */
+}
+
+
+.button {
+    /* Start Samara's contribution */
+    background-color: lightblue;
+    border: none;
+    padding: 7px 0px;
+    margin: 5px;
+    justify-items: center;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    width: 95px;
+    /* End Samara's contribution */
+}
+

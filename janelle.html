@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Janelle's Page</title>
+    <!--CSS-->
     <style>
         table {
             border: 1px solid black;
@@ -12,26 +13,47 @@
 
         td,th {
             border: 1px solid black;}
+
+        menu {
+            border: solid thin black;
+            padding: 10px;
+            width:fit-content;
+        }
+
+        button {
+            padding:5px;
+            background-color: lightcyan;
+        }
+        
     </style>
-    <nav>
-        <a href="index.html">Main Page</a>
-        <a href="samara.html">Samara's Page</a>
-        <a href="laarni.html.html">Laarni's Page</a>
-        <a href="Sydneypage.html">Sydney's Page</a>     
-    </nav>
-    <h1>Oatmeal Chocolate Chip Cookies</h1>
+
+    <!--Nav and Title-->
+    <section>
+        <nav>
+            <button><a href="index.html">Main Page</a></button>
+            <button><a href="samara.html">Samara's Page</a></button>
+            <button><a href="laarni.html">Laarni's Page</a></button>
+            <button><a href="Sydneypage.html">Sydney's Page</a></button>   
+        </nav>
+        <h1>Oatmeal Chocolate Chip Cookies</h1>
+    </section>    
 </head>
 
 <body>
     <!--Table of Contents-->
     <section>
-        <h3>Table of Contents</h3>
-        <a href="#intro">Introduction</a>
-        <a href="#Recipe">Ingredients and Recipe</a>
+        <!--New element-->
+        <menu>
+            <h3>Table of Contents</h3>
+            <li><a href="#Intro">Introduction</a></li>
+            <li><a href="#Recipe">Ingredients and Recipe</a></li>
+            <li><a href="#baking">Baking Cookies</a></li>
+            <li><a href="#storing">Storing</a></li>
+        </menu>
     </section>
     <!--Picture and info-->
     <section>
-        <h2>Janelle's Favourite Food</h2>
+        <h2>Janelle's Page</h2>
         <h3 id="Intro">Introduction</h3>
         <p>One of my favourit foods are the oatmeal chocolate chip cookies that is from a recipe that my mom got from somewhere. They are one of the most popular kinds of cookie. Basically just regular chocolate chip cookies with oats, and I like to add walnuts. My mom used to make them sometimes and then when I learned to bake they were one of the first things I made. I still like making them quite often and everyone else that lives with me likes it when I make them too.</p>
         <img src="Cookies.JPG" alt="Chocolate Chip Cookies" width="25%">
@@ -118,6 +140,16 @@
         <p>Mix in quick oats, chocolate chips and if desired the walnuts.</p>
         <h3>Step 5</h3>
         <p>Put cookies on greased cookie sheet and bake in oven at 375&deg for 10 minutes.</p>
+    </section>
+    <!--Section for stuff about baking cookies-->
+    <section>
+        <h2 id="baking">Baking</h2>
+        <p>stuf about baking</p>
+    </section>
+    <!--Section for stuff about storing cookies-->
+    <section>
+        <h2 id="storing">Storing</h2>
+        <p>stuff about storing</p>
     </section>
 </body>
 </html>

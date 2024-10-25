@@ -4,6 +4,30 @@ body {
     margin: 0 auto 800px auto;
 }
 
+#title {
+    margin: 0px;
+    padding: 19.920px;
+    background-image: url(./bread.png);
+    
+}
+
+h1 {
+    text-align: center;
+    color: rgb(0, 38, 135);
+    justify-content: center;
+    font-size: 42px;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 3px;
+    background-color: rgba(231, 229, 229, 0.4);
+    
+}
+
+h2, h3 {
+    color: rgb(0, 38, 135);
+}
+
 .top {
     font-size: .8125rem;
     display: flex;
@@ -19,7 +43,7 @@ body {
 
 header{
     display: block;
-    background-color: aliceblue;
+    background-color:aliceblue;
     height: 50px;
 }
 
@@ -41,7 +65,7 @@ nav{
 }
 
 .navleft{
-    /* position:static; */
+    position:static;
     display:flex;
     flex-flow: row;
     justify-content: space-between;
@@ -49,31 +73,33 @@ nav{
     height: 50px;
 }
 
-ul{
+.navlinks{
     list-style: none;
-    /* align-items: center; */
+    display: inline-block;
+    justify-items: center;
+    align-items: center;
 }
 
-li{
+/* li {
     display: inline-block;
     justify-items: center;
     align-items: center;
     
-}
+} */
 
 a:link	{
     /* box-sizing: inherit; */
     display: block;
-    color: palevioletred;
+    color: rgb(209, 31, 90);
     
 }
 
 a:visited{
-    color: darkgreen;
+    color: rgb(170, 44, 156);
 }
 
 .button{
-    background-color: lightblue;
+    background-color: rgb(229, 158, 221);
     border: none;
     padding: 7px 0px;
     margin: 5px;
@@ -88,4 +114,34 @@ a:visited{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+table{
+    width: 75%;
+    margin: auto;
+}
+
+table, td, th {
+    /* column-width: 200px; */
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#hrow1, #hrow2 {
+    color: rgb(243, 238, 238);
+    background-color: rgb(47, 43, 43);
+}
+
+th {
+    background-color: rgb(247, 182, 192);
+}
+
+/* td, th{
+    text-align: center;
+} */
+
+tbody tr:nth-child(even) {
+    background-color: #dddddd;
 }
