@@ -97,3 +97,48 @@ a:link	{
     /* Laarni's contribution: Update background-color */
 }
 
+/* Start Samara's contribution */
+/* Creating menu that will apear when the screen width is <=751px */
+ul.shortscreen{
+    padding-inline-start: 0px;
+    position:relative;
+    padding-left: 5%;
+}
+
+.shortscreen1 {
+    list-style: none;
+    display: none;
+}
+
+/* Short screen pages's menu */
+.dropdowpages1{
+    position: absolute;
+    display: none;
+}
+
+.dropdowpages1 a{
+    display: block;
+    background-color: lightblue;
+    align-items: center;
+    width: 105px;
+    text-decoration: none;
+}
+
+.dropdowpages1 a:hover{
+    background-color: rgb(229, 158, 221);;
+}
+
+.shortscreen1:hover .dropdowpages1{
+    display: block;
+    align-items: first baseline;
+}
+
+@media screen and (width <= 751px) {
+    .navlinks{
+        display: none;
+    }
+    .shortscreen1{
+        display: inline-block;
+    }
+}
+/* End Samara's contribution */
