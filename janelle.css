@@ -1,0 +1,23 @@
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td,th {
+    border: 1px solid black;}
+
+menu {
+    border: solid thin black;
+    padding: 10px;
+    width:fit-content;
+}
+
+button {
+    padding:5px;
+    background-color: lightcyan;
+}
+body {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto 200px auto; 
+}  
