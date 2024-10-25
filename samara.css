@@ -1,8 +1,13 @@
 body {
     width: 80%;
     max-width: 1200px;
-    margin: 0 auto 800px auto;
+    margin: auto auto 300px auto;
 }
+
+#container{
+    height: 2000px;
+}
+
 
 #title {
     margin: 0px;
@@ -51,6 +56,14 @@ nav{
     height: 50px;
 }
 
+ul.navlinks{
+    padding-inline-start: 0px;
+}
+
+/* li.navlinks{
+    text-align: center;
+} */
+
 .navbar{
     position: sticky;
     /* display: flex; */
@@ -73,11 +86,11 @@ nav{
     height: 50px;
 }
 
-.navlinks{
+.navlinks, .navlinks1{
     list-style: none;
     display: inline-block;
     justify-items: center;
-    align-items: center;
+    text-align: center;
 }
 
 /* li {
@@ -89,13 +102,18 @@ nav{
 
 a:link	{
     /* box-sizing: inherit; */
-    display: block;
-    color: rgb(209, 31, 90);
+    display: inline-block;
+    color: rgb(170, 44, 156);
+    text-align: center;
     
 }
 
 a:visited{
     color: rgb(170, 44, 156);
+}
+
+a:hover{
+    color: rgb(209, 31, 90);
 }
 
 .button{
@@ -110,13 +128,78 @@ a:visited{
     width: 95px;
 }
 
+#menu.button{
+    padding: 0px;
+    height: 25.4;
+}
+
 #cupcakepng{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* Internal links formating */
+#internal-link0, #internal-link1, #internal-link2, #internal-link3, #internal-link4, #internal-link5 {
+    scroll-margin-top: 60px ;
+}
 
+/* Formating dropdow menu of the "Sections" button */
+.dropdowncontent{
+    position: absolute;
+    display: none;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.dropdowncontent a{
+    display: block;
+    background-color: lightblue;
+    align-items: center;
+    width: 105px;
+    text-decoration: none;
+}
+
+.dropdowncontent a:hover{
+    background-color: rgb(229, 158, 221);
+}
+
+.navlinks1:hover .dropdowncontent{
+    display: block;
+    align-items: first baseline;
+}
+
+/* formating element "details". This is my element not covered in class */
+details {
+    border: 1px solid rgb(0, 38, 135);
+    border-radius: 4px;
+    /* padding: 0.5em 0.5em 0; */
+    color: white;
+    background-color: rgb(0, 38, 135);
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+  }
+  
+  summary {
+    font-family: Arial, Helvetica, sans-serif;
+    /* margin: -0.5em -0.5em 0; */
+    padding: 0.2em;
+  }
+  
+  details[open] {
+    padding: 0,5em;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+  }
+  
+  details[open] summary {
+    border-bottom: 1px solid rgb(229, 158, 221);
+    margin-bottom: 0.5em;
+  }
+
+  /* Formating the table */
 table{
     width: 75%;
     margin: auto;
@@ -144,4 +227,86 @@ th {
 
 tbody tr:nth-child(even) {
     background-color: #dddddd;
+}
+
+/* Criating menu that will apear when the screen width is <=751px */
+ul.shortscreen{
+    padding-inline-start: 0px;
+    position:relative;
+    right: 100px;
+}
+.shortscreen1, .shortscreen2 {
+    list-style: none;
+    display: none;
+    /* display: inline-block; */
+}
+
+/* Short screen Section's menu */
+.dropdowsections2{
+    position: absolute;
+    display: none;
+
+}
+
+.dropdowsections2 a{
+    display: block;
+    background-color: lightblue;
+    align-items: center;
+    width: 105px;
+    text-decoration: none;
+}
+
+.dropdowsections2 a:hover{
+    background-color: rgb(229, 158, 221);;
+}
+
+.shortscreen1:hover .dropdowsections2{
+    display: block;
+    align-items: first baseline;
+}
+
+/* Short screen pages's menu */
+.dropdowpages2{
+    position: absolute;
+    display: none;
+}
+
+.dropdowpages2 a{
+    display: block;
+    background-color: lightblue;
+    align-items: center;
+    width: 105px;
+    text-decoration: none;
+}
+
+.dropdowpages2 a:hover{
+    background-color: rgb(229, 158, 221);;
+}
+
+.shortscreen2:hover .dropdowpages2{
+    display: block;
+    align-items: first baseline;
+}
+
+@media screen and (width <= 751px){
+    .navlinks{
+        display: none;
+    }
+    .shortscreen1, .shortscreen2 {
+        display: inline-block;
+    }
+}
+
+/* Formating footer */
+footer{
+    padding: 50px 0 0 0;
+    height: 200px;
+    color: white;
+    background-color: rgb(0, 38, 135);
+    padding-bottom: 10px;
+    margin-top: 300px;
+    
+}
+footer div{
+    margin-left: 30px;
 }
