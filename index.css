@@ -3,6 +3,7 @@ body {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto 800px auto;
+    background-color: #F6E9B2;
     /* End Samara's contribution */
 }
 
@@ -12,7 +13,7 @@ body {
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
     color: aliceblue;
-    background-color: black;
+    background-color: #0A6847;
     align-items: center;
     justify-content: center;
     height: 40px;
@@ -24,7 +25,7 @@ body {
 header {
     /* Start Samara's contribution */
     display: block;
-    background-color:aliceblue;
+    background-color:#7ABA78;
     height: 50px;
    /* End Samara's contribution */
 }
@@ -79,7 +80,7 @@ a:link	{
 
 .button {
     /* Start Samara's contribution */
-    background-color: lightblue;
+    background-color: #E2BFD9;
     border: none;
     padding: 7px 0px;
     margin: 5px;
@@ -88,6 +89,7 @@ a:link	{
     display: inline-block;
     cursor: pointer;
     width: 95px;
+    color: black;
     /* End Samara's contribution */
 }
 
