@@ -9,8 +9,7 @@ body{
 
 .pages{
     padding: 10px;
-    background-color: #D4BEE4;
-    
+    background-color: #D4BEE4    
 }
 
 img{
@@ -33,14 +32,17 @@ img{
     display: flex;
     gap: 20px;
     background-color: #db803a;
-    height: 30px;
-    width: 300px;
+    height: 10px;
+    width: 400px;
     color: aliceblue;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     border: solid black;
 }
 
+.nav-item{
+    text-align: center;
+}
 table, th, td{
     border: 1px solid;
     border-collapse: collapse;
