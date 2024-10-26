@@ -1,6 +1,6 @@
 .header {
     background-color: #3B1E54;
-    color: #EEEEEE;    
+    color: white;
 }
 
 body{
@@ -9,7 +9,7 @@ body{
 
 .pages{
     padding: 10px;
-    background-color: #D4BEE4    
+    background-color: #D4BEE4;
 }
 
 img{
@@ -17,32 +17,27 @@ img{
     width: 300px;
     border: solid beige;
     border-radius: 10px;
-    margin: 10px; 
+    margin-top: 10px;
 }   
 
 .picture{
     display: flex;
     justify-content: left; 
     align-items:center; 
-    flex-wrap: wrap; 
-    padding: 10px;
 }
 
 .navlink{
     display: flex;
     gap: 20px;
-    background-color: #db803a;
-    height: 10px;
-    width: 400px;
-    color: aliceblue;
+    background-color: #F8D082;
+    height: 18px;
+    width: 350px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding-bottom: 15px;
-    border: solid black;
-}
-
-.nav-item{
+    padding-bottom: 20px;
+    border: solid #3B1E54;
     text-align: center;
 }
+
 table, th, td{
     border: 1px solid;
     border-collapse: collapse;
