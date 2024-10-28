@@ -1,10 +1,10 @@
 
-h1{
+h{
     font-size: 30px;
     text-align: center;
 }
 nav1 {
-    font-size: 16px;
+    font-size: 15px;
 }
 
  a:link{
@@ -45,7 +45,10 @@ body{
     text-align: center;
     }
 
-p2{
+p{
+    font-size: 20px;
+}
+ol{
     font-size: 20px;
 }
 table {
@@ -91,6 +94,7 @@ img{
 
 menu{
     text-align: left;
+    font-size: 30px;
 }
 .smalltable{ 
     border: 10px solid black;
@@ -100,5 +104,10 @@ menu{
     height: 250px;
     margin: auto;
     padding: 25px;
+
+}
+button{
+    background-color: rosybrown;
+    border-radius: 15px;
 
 }
