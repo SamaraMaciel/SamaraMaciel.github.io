@@ -38,8 +38,8 @@ a.fill-div {
 
 body{
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto 800px auto;
+    max-width: 1000px;
+    margin: auto;
     background-color: rgb(168, 162, 162);
     color: rgba(165, 66, 66, 0.788);
     text-align: center;
@@ -110,4 +110,9 @@ button{
     background-color: rosybrown;
     border-radius: 15px;
 
+}
+footer{
+    background-color: slategray;
+    padding: 2px;
+    margin: 5px;
 }
