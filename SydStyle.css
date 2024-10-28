@@ -1,12 +1,79 @@
-body{background-color: rgb(168, 162, 162);
-    color: rgba(165, 66, 66, 0.788);
+
+h1{
+    font-size: 30px;
+    text-align: center;
+}
+nav1 {
+    font-size: 16px;
+}
+
+ a:link{
+        color: pink;
+    }    
+a:visited{
+        color: rgb(117, 79, 86);
     }
-    table {
-            border: 3px solid black;
+    nav1 {background-color: slategrey;
+display: flex;}
+.flex-container{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    }
+.navbox{
+        border: 1em solid rgb(92, 62, 67);
+        padding: 0.5rem;
+        flex: 1;
+        text-align: center;
+    }
+a.fill-div {
+        display: block;
+        height: 100%;
+        width: 100%;
+        text-decoration: none;
+    }
+
+
+body{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 800px auto;
+    background-color: rgb(168, 162, 162);
+    color: rgba(165, 66, 66, 0.788);
+    text-align: center;
+    }
+
+p2{
+    font-size: 20px;
+}
+table {
+            border: 10px solid black;
             border-collapse: collapse;
+            border-style: double;
+            width: 1000px; 
+            height: 350px;
+            margin: auto;
+            padding: 25px;
         }
 
-    td,th {
-            border: 3px solid black;
+    th {
+            border-width: 3px solid;
+            border-style: solid;
+            border-color: black;
+            column-width: auto;
+            text-align: center;
+            font: bold;
         }
-
+        td{
+            border-width: 3px solid;
+            border-style: solid;
+            border-color: black;
+            text-align: center;
+            font: bold;
+        }
+       ol{
+        text-align: left;
+        font-size: large;
+       }
