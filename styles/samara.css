@@ -8,12 +8,15 @@ body {
 /* Formatimg the height of the internal main container.
 changing this value will reduce or increase the blanck space 
 between the footer and the last line of content in the page.
-id = 'container set  */
+id = 'container' set in the body element */
 #container{
     height: 1800px;
 }
 
-
+/* Formating the first container created with a div element inside the main element.
+This code is formating the container that has the title of the page "Baking Bread".
+The configurations for the text formating in this container is inside the h1 element css. 
+The background image here can be changed or removed in each page*/
 #title {
     margin: 0px;
     padding: 19.920px;
@@ -38,6 +41,9 @@ h2, h3 {
     color: rgb(0, 38, 135);
 }
 
+/* Its using flex box - Formating the class 'top' inside the tag aside. It's the fist text that appears in my page,
+before the nav bar. This was before the header element, so it were moved to after the 
+header element so the header will always stick to the top of the page.*/
 .top {
     font-size: .8125rem;
     display: flex;
@@ -51,24 +57,29 @@ h2, h3 {
     margin-bottom: 5px;
 }
 
+/* General formating of the the header element.
+The background color can be changed of each page.*/
 header{
     display: block;
     background-color:aliceblue;
     height: 50px;
 }
 
+/* Setting the height of the nav bar element */
 nav{
     height: 50px;
 }
 
-ul.navlinks{
+/* moved down */
+/* ul.navlinks{
     padding-inline-start: 0px;
-}
+} */
 
 /* li.navlinks{
     text-align: center;
 } */
 
+/* General formating of the class 'navbar' set in the header element */
 .navbar{
     position: sticky;
     /* display: flex; */
@@ -82,6 +93,9 @@ ul.navlinks{
     /* right: -10px; */
 }
 
+/* General configuration of the links in the nav bar.
+This is setting the position of the rectangles the links are in.
+It's using flexbox */
 .navleft{
     position:static;
     display:flex;
@@ -91,6 +105,12 @@ ul.navlinks{
     height: 50px;
 }
 
+/* General configuration of the ul (list) element in the nav bar */
+ul.navlinks{
+    padding-inline-start: 0px;
+}
+
+/* Formating the position of the links inside the rectangles */
 .navlinks, .navlinks1{
     list-style: none;
     display: inline-block;
@@ -105,6 +125,9 @@ ul.navlinks{
     
 } */
 
+/* Formating the color of the link.
+This can be changed in each page.
+It's also formating the position */
 a:link	{
     /* box-sizing: inherit; */
     display: inline-block;
@@ -113,14 +136,20 @@ a:link	{
     
 }
 
+/* Formating the color of the link that has already been clicked.
+This can be changed in each page. */
 a:visited{
     color: rgb(170, 44, 156);
 }
 
+/* Formating the color of think when you pass the mouse over it.
+This can be changed in each page. */
 a:hover{
     color: rgb(209, 31, 90);
 }
 
+/* General formating of each li element inside the ul list.
+The color here can be changed in each page. */
 .button{
     background-color: rgb(229, 158, 221);
     border: none;
@@ -133,18 +162,22 @@ a:hover{
     width: 95px;
 }
 
+/* I changed somethin and this fomating is not been used. */
 #menu.button{
     padding: 0px;
     height: 25.4;
 }
 
+/* Formating of the cupcake image in the nav bar.
+This will be removed, probably.
+It is using flexbox. */
 #cupcakepng{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* Internal links formating */
+/* Internal links formating - drop down menu*/
 #internal-link0, #internal-link1, #internal-link2, #internal-link3, #internal-link4, #internal-link5 {
     scroll-margin-top: 60px ;
 }
@@ -157,6 +190,7 @@ a:hover{
     /* justify-content: center; */
 }
 
+/* Formating the links of the 'Sections' button */
 .dropdowncontent a{
     display: block;
     background-color: lightblue;
@@ -165,10 +199,15 @@ a:hover{
     text-decoration: none;
 }
 
+/* Formating the links of the 'Sections' button
+when you pass the mouse over it.
+The color can be changed in each page. */
 .dropdowncontent a:hover{
     background-color: rgb(229, 158, 221);
 }
 
+/* Formating the internal links of the drop down menu 
+when you pass the mouse over it. */
 .navlinks1:hover .dropdowncontent{
     display: block;
     align-items: first baseline;
@@ -302,16 +341,17 @@ ul.shortscreen{
     }
 }
 
-/* Formating footer */
+/* Formating footer.
+The colours can be changed in each page */
 footer{
-    padding: 50px 0 0 0;
-    height: 200px;
+    padding: 1px 0px 0px 0px;
+    height: 122px;
     color: white;
     background-color: rgb(0, 38, 135);
     margin-top: 30%;
-    margin-bottom: 0%;
-    
+    margin-bottom: 0px;
 }
-footer div{
-    margin-left: 30px;
+
+footer div ul{
+    list-style: none;
 }
