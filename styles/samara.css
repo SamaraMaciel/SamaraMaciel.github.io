@@ -1,9 +1,14 @@
+/* Formating the shape of how the page appear in screen  - body container*/
 body {
     width: 80%;
     max-width: 1200px;
     margin: auto auto 300px auto;
 }
 
+/* Formatimg the height of the internal main container.
+changing this value will reduce or increase the blanck space 
+between the footer and the last line of content in the page.
+id = 'container set  */
 #container{
     height: 1800px;
 }

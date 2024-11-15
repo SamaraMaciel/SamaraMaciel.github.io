@@ -1,0 +1,6 @@
+/* Formating the shape of how the page appear in screen  - body container*/
+body {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto auto 300px auto;
+}
