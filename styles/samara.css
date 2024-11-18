@@ -167,7 +167,7 @@ The color here can be changed in each page. */
 /* I changed somethin and this fomating is not been used. */
 #menu.button{
     padding: 0px;
-    height: 25.4;
+    height: 25.4px;
 }
 
 /* Formating of the cupcake image in the nav bar.
@@ -234,7 +234,7 @@ details {
   }
   
   details[open] {
-    padding: 0,5em;
+    padding: 0.5em;
     margin-left: 10%;
     margin-right: 10%;
     text-align: center;
@@ -243,6 +243,12 @@ details {
   details[open] summary {
     border-bottom: 1px solid #DEAE9F;
     margin-bottom: 0.5em;
+  }
+
+  /* Formating the image inside the detail element */
+  #homebread{
+    width: 50%;
+    height: 200px;
   }
 
   /* Formating the table */
@@ -369,6 +375,11 @@ section, #internal-link-3{
     grid-column-start: 2;
     grid-column-end: 2;
     /* border: 1px solid black; */
+}
+
+#best-before{
+    width: 100%;
+    height: 80%;
 }
 
 /*End of the grid ocntainer  */
