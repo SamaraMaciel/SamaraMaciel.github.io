@@ -283,7 +283,6 @@ ul.shortscreen{
     #cookies{
         justify-content: center;
         margin:auto;
-        width:375px;
     }
     .grid{
         display: grid;
