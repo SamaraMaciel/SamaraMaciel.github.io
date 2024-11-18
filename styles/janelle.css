@@ -1,23 +1,302 @@
 table {
     border: 1px solid black;
     border-collapse: collapse;
+    padding: 10px;
 }
 
 td,th {
-    border: 1px solid black;}
-
-.tableOfContents {
-    border: solid thin black;
+    border: 1px solid black;
     padding: 10px;
-    width:fit-content;
 }
 
-button {
-    padding:5px;
-    background-color: lightcyan;
+tr th {
+    background-color: #e0afa0;
+    color:#8a817c;
 }
+
+tbody tr:nth-child(even) {
+    color:#f4f3ee;
+    background-color: #bcb8b1;
+}
+
+.title{
+    color:#000000;
+    text-align:center;
+    justify-content: center;
+    background-color: #e0afa0;      
+    font-size: 42px;
+    margin: 0px;
+    padding: 19.920px;
+    border-radius: 3px;
+}
+
+/*uses flexbox*/
+.top {
+    font-size: .8125rem;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #e0afa0;
+    background-color: #8a817c;
+    justify-content: center;
+    height: 40px;
+    border: 3px;
+    margin-bottom: 5px;
+    
+}
+
+/* the nav bar */
+ul.navlinks{
+    padding-inline-start: 0px;
+}
+
+nav{
+    position:static;
+    display:flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color:#bcb8b1;
+    
+}
+
+.navbar{
+    position: sticky;
+    top: 0px;
+}
+
+.navlinks, .navlinks1{
+    list-style: none;
+    display: inline-block;
+    justify-items: center;
+    text-align: center;
+}
+
+
+a:link	{
+    display: inline-block;
+    color: #f4f3ee;
+    text-align: center;
+}
+
+
+a:visited{
+    color: #f4f3ee;
+}
+
+
+a:hover{
+    color: #e0afa0;
+}
+
+.button{
+    background-color:#8a817c;
+    border: none;
+    padding: 7px 0px;
+    margin: 5px;
+    justify-items: center;
+    display: inline-block;
+    cursor: pointer;
+    width: 95px;
+}
+
+#menu2.button{
+    padding: 0px;
+    height: 25.4px;
+}
+
+
+#Overview, #Recipe, #Storing, #Freezing {
+    scroll-margin-top: 60px ;
+}
+
+
+.dropdowncontent{
+    position: absolute;
+    display: none;
+    align-items: center;
+}
+
+.dropdowncontent a{
+    display: block;
+    background-color: #8a817c;
+    align-items: center;
+    width: 105px;
+    text-decoration: none;
+}
+
+.dropdowncontent a:hover{
+    color:#e0afa0;
+}
+
+.navlinks1:hover .dropdowncontent{
+    display: block;
+    align-items: first baseline;
+}
+/*end nav bar portion*/
+
 body {
-    width: 90%;
-    max-width: 1400px;
-    margin: 0 auto 200px auto; 
+    width: 80%;
+    max-width: 1200px;
+    margin: auto auto 300px auto;
+    background-color: #f4f3ee;
+    color:#8a817c;
+    height: 1800px;
 }  
+
+/* grid portion */
+#intro{
+    grid-area: part-one;
+}
+
+#baking{
+    grid-area: part-two;
+}
+
+#recipe{
+    grid-area: part-three;
+    margin-left:50px;
+}
+
+#instructions{
+    grid-area:part-four;
+}
+
+#cookies{
+    border:5px solid #8a817c;
+    border-radius: 50px;
+    margin-left:100px;
+    grid-area: image;
+    float:right;
+}
+
+.grid{
+    display: grid;
+    grid-template-areas: 
+        "part-one      image "
+        "part-two    part-two"
+        "part-three part-four";
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+}
+
+/* multicol portion*/
+.cols {
+    column-width: 30em;
+    margin-top:40px;
+}
+
+.cols p {
+    break-inside: avoid;
+}
+/*end multicol*/
+
+footer{
+    padding: 1px 0px 0px 0px;
+    height: 122px;
+    color:#f4f3ee;
+    background-color: #e0afa0;
+    margin-top: 30%;
+    margin-bottom: 0px;
+}
+
+footer p {
+    margin-left:30px;
+}
+
+/* media queries */
+ul.shortscreen{
+    padding-inline-start: 0px;
+    position:fixed;
+    right:100px;
+    
+   
+}
+.shortscreen1, .shortscreen2 {
+    list-style: none;
+    display: none;
+}
+
+/* Short screen Section's menu */
+.dropdowsections2{
+    position: absolute;
+    display: none;
+
+}
+
+.dropdowsections2 a{
+    display: block;
+    background-color: #8a817c;
+    align-items: center;
+    width: 105px;
+    text-decoration: none;
+}
+
+.dropdowsections2 a:hover{
+    color:#e0afa0;
+}
+
+.shortscreen1:hover .dropdowsections2{
+    display: block;
+    align-items: first baseline;
+}
+
+/* Short screen pages's menu */
+.dropdowpages2{
+    position: absolute;
+    display: none;
+}
+
+.dropdowpages2 a{
+    display: block;
+    background-color: #8a817c;
+    align-items: center;
+    width: 105px;
+    text-decoration: none;
+}
+
+.dropdowpages2 a:hover{
+    color:#e0afa0;
+}
+
+.shortscreen2:hover .dropdowpages2{
+    display: block;
+    align-items: first baseline;
+}
+
+
+@media screen and (width <= 751px){
+    .navlinks{
+        display: none;
+    }
+    .shortscreen1, .shortscreen2 {
+        display: inline-block;
+    }
+    
+}
+
+@media screen and (width <= 1000px) {
+    #recipe{
+        justify-content: center;
+        margin:auto;
+    }
+    #cookies{
+        justify-content: center;
+        margin:auto;
+        width:375px;
+    }
+    .grid{
+        display: grid;
+        grid-template-areas: 
+            "part-one"
+            "image"
+            "part-two"
+            "part-three"
+            "part-four";
+        grid-template-columns: 1fr;
+        gap:20px;
+    }  
+    body{
+        height:2800px;
+    }
+}
