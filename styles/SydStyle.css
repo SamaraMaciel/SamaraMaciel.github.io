@@ -1,61 +1,9 @@
-
-h{
-    font-size: 30px;
-    text-align: center;
-}
-nav1 {
-    font-size: 15px;
-}
-
- a:link{
-        color: pink;
-    }    
-a:visited{
-        color: rgb(117, 79, 86);
-    }
-    nav1 {background-color: slategrey;
-display: flex;}
-.flex-container{
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: space-around;
-    }
-.navbox{
-        border: 1em solid rgb(92, 62, 67);
-        padding: 0.5rem;
-        flex: 1;
-        text-align: center;
-    }
-a.fill-div {
-        display: block;
-        height: 100%;
-        width: 100%;
-        text-decoration: none;
-    }
-
-
-body{
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
-    background-color: rgb(168, 162, 162);
-    color: rgba(165, 66, 66, 0.788);
-    text-align: center;
-    }
-
-p{
-    font-size: 20px;
-}
-ol{
-    font-size: 20px;
-}
+/* Formatting the shape of how the page appear in screen  - body container*/
 table {
-            border: 10px solid black;
+            border: 10px solid #f4f3ee;
             border-collapse: collapse;
             border-style: double;
-            width: 1000px; 
+            width: fit-content; 
             height: 350px;
             margin: auto;
             padding: 25px;
@@ -65,17 +13,17 @@ table {
             }
 
     th {
-            border-width: 3px solid;
+            border-width: 3px;
             border-style: solid;
-            border-color: black;
+            border-color: #bcb8b1;
             column-width: auto;
             text-align: center;
             font: bold;
         }
         td{
-            border-width: 3px solid;
+            border-width: 3px;
             border-style: solid;
-            border-color: black;
+            border-color: #bcb8b1;
             text-align: center;
             font: bold;
         }
@@ -85,34 +33,285 @@ table {
        }
 img{
     display: block; 
-    margin: 30px; 
-    width: 50%; 
+    margin: 20px; 
+    width: 50%;
 }
-.cap-placement{
-    text-align: left;
+#column-c {
+    background-color: #8a817c;
+
+}
+#row-c {
+    background-color: #bcb8b1;
 }
 
-menu{
-    text-align: left;
-    font-size: 30px;
-}
-.smalltable{ 
-    border: 10px solid black;
-    border-collapse: collapse;
-    border-style: double;
-    width: 300px; 
+#float-img{
+    width: 250px;
     height: 250px;
+    border-radius: 20px;
+    float: right; 
+            
+}
+.top {
+    font-size: .8125rem;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #e0afa0;
+    background-color: #8a817c;
+    justify-content: center;
+    height: 40px;
+    border: 3px;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+body {
+    width: 80%;
+    max-width: 1200px;
     margin: auto;
-    padding: 25px;
-
+    background-color: #463f3a;
+    color:#e0afa0;
+    height: auto;
 }
-button{
-    background-color: rosybrown;
-    border-radius: 15px;
 
+header{
+    display: block;
+    background-color:#8a817c;
+    height: 50px;
 }
-footer{
-    background-color: slategray;
-    padding: 2px;
+
+ul.navlinks{
+    padding-inline-start: 0px;
+}
+/* Setting the height of the nav bar element */
+nav{
+    height: 50px;
+    position:static;
+    display:flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color:#bcb8b1;
+}
+
+
+.navbar{
+    position: sticky;
+    top: 0px;
+}
+
+.navlinks, .navlinks1{
+    list-style: none;
+    display: inline-block;
+    justify-items: center;
+    text-align: center;
+}
+
+a:link	{
+    display: inline-block;
+    color: #000000;
+    text-align: center;
+}
+
+a:visited{
+    color: #000000;
+}
+
+a:hover{
+    color: #463f3a;
+}
+
+.button{
+    background-color: #e0afa0;
+    border: none;
+    padding: 7px 0px;
     margin: 5px;
+    justify-items: center;
+    display: inline-block;
+    cursor: pointer;
+    width: 95px;
+}
+.pie-button{
+    background-color: #463f3a;
+    color: #e0afa0;
+    border-radius: 15px;
+}
+
+#menu2.button{
+    padding: 0px;
+    height: 25.4px;
+}
+/* Internal links formatting - drop down menu edit for you internal links*/
+#toppage, #PiceCrust, #PieFilling, #PieGrid, #PieButton {
+    scroll-margin-top: 60px ;
+}
+
+/* Formatting dropdown menu of the "Sections" button */
+.dropdowncontent{
+    position: absolute;
+    display: none;
+    align-items: center;
+}
+
+/* Formatting the links of the 'Sections' button */
+.dropdowncontent a{
+    display: block;
+    background-color: #bcb8b1;
+    align-items: center;
+    width: 105px;
+    text-decoration: none;
+}
+
+.dropdowncontent a:hover{
+    background-color: #8a817c;
+}
+
+.navlinks1:hover .dropdowncontent{
+    display: block;
+    align-items: first baseline;
+}
+
+/* End of Nav Bar */
+/* Screen Adapt section/media queries(should be at the end) */
+/* Dropdown small screen */
+ul.shortscreen{
+    padding-inline-start: 0px;
+    position:fixed;
+    right: 100px;
+    
+}
+.shortscreen1, .shortscreen2 {
+    list-style: none;
+    display: none;
+}
+
+/* Short screen Section's menu */
+.dropdowsections2{
+    position: absolute;
+    display: none;
+
+}
+
+.dropdowsections2 a{
+    display: block;
+    background-color: #8a817c;
+    align-items: center;
+    width: 105px;
+    text-decoration: none;
+}
+
+.dropdowsections2 a:hover{
+    color: #bcb8b1;
+}
+
+.shortscreen1:hover .dropdowsections2{
+    display: block;
+    align-items: first baseline;
+}
+
+/* Short screen pages's menu */
+.dropdowpages2{
+    position: absolute;
+    display: none;
+}
+
+.dropdowpages2 a{
+    display: block;
+    background-color: #8a817c;
+    align-items: center;
+    width: 105px;
+    text-decoration: none;
+}
+
+.dropdowpages2 a:hover{
+    color: #bcb8b1;
+}
+
+.shortscreen2:hover .dropdowpages2{
+    display: block;
+    align-items: first baseline;
+}
+
+h1, h2{
+    font-size: xx-large;
+    text-align: left;
+}  
+p{
+    font-size: 20px;
+    column-span: all;
+    text-align: left;
+}
+ol{
+    font-size: 20px;
+}
+
+@media screen and (width <= 751px){
+    .navlinks{
+        display: none;
+    }
+    .shortscreen1, .shortscreen2 {
+        display: inline-block;
+    }
+}
+
+
+/* Formatting footer.
+The colours can be changed in each page */
+footer{
+padding: 1px 0px 0px 0px;
+height: 122px;
+color: #f4f3ee;
+background-color: #e0afa0;
+margin-top: 30%;
+margin-bottom: 0px;
+}
+/* Navbar, dropdown menu, and footer agreed upon and should be the same across all pages*/
+button{
+    background-color: #000;
+
+}
+.multi-col{
+    max-width: 1800px;
+    margin: 0 auto;
+    column-width: 300px;
+    column-rule: 5px solid #000000;
+    column-gap: 20px;
+    column-count: 2;
+}
+
+.photo-grid{
+    display: grid;
+    grid-template-areas: 
+    "p1  p1  p2  p2"
+    "c1  c1  c2  c2"
+    " .   .   .   ."
+    "p3  p3   .   ."
+    "p3  p3   .   ."
+    "c3  d3   .   ."
+    ;
+    grid-template-columns: auto;
+    gap: 20px;
+}
+
+#Px1{
+    grid-area: p1;
+    border-radius: 20px;
+}
+#Px2{
+    grid-area: p2;
+    border-radius: 20px;
+}
+#Px3{
+    grid-area: p3;
+    border-radius: 20px;
+}
+#Cx1{
+    grid-area: c1;
+}
+#Cx2{
+    grid-area: c2;
+}
+#Cx3{
+    grid-area: c3;
+
 }
