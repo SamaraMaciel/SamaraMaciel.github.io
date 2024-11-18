@@ -3,6 +3,7 @@ body {
     width: 80%;
     max-width: 1200px;
     margin: auto auto 300px auto;
+    background-color: #F4F3EE;
 }
 
 /* Formatimg the height of the internal main container.
@@ -26,7 +27,7 @@ The background image here can be changed or removed in each page*/
 
 h1 {
     text-align: center;
-    color: rgb(0, 38, 135);
+    color: #463F3A;
     justify-content: center;
     font-size: 42px;
     margin: auto;
@@ -38,7 +39,7 @@ h1 {
 }
 
 h2, h3 {
-    color: rgb(0, 38, 135);
+    color: #463F3A;
 }
 
 /* Its using flex box - Formating the class 'top' inside the tag aside. It's the fist text that appears in my page,
@@ -48,7 +49,8 @@ header element so the header will always stick to the top of the page.*/
     font-size: .8125rem;
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
-    color: aliceblue;
+    /* color: aliceblue; */
+    color: #F4F3EE;;
     background-color: black;
     align-items: center;
     justify-content: center;
@@ -61,7 +63,7 @@ header element so the header will always stick to the top of the page.*/
 The background color can be changed of each page.*/
 header{
     display: block;
-    background-color:aliceblue;
+    background-color: #8A817C;
     height: 50px;
 }
 
@@ -131,7 +133,7 @@ It's also formating the position */
 a:link	{
     /* box-sizing: inherit; */
     display: inline-block;
-    color: rgb(170, 44, 156);
+    color: #F4F3EE;
     text-align: center;
     
 }
@@ -139,19 +141,19 @@ a:link	{
 /* Formating the color of the link that has already been clicked.
 This can be changed in each page. */
 a:visited{
-    color: rgb(170, 44, 156);
+    color: #F4F3EE;
 }
 
 /* Formating the color of think when you pass the mouse over it.
 This can be changed in each page. */
 a:hover{
-    color: rgb(209, 31, 90);
+    color: #DFAE9F;
 }
 
 /* General formating of each li element inside the ul list.
 The color here can be changed in each page. */
 .button{
-    background-color: rgb(229, 158, 221);
+    background-color: #463F3A;
     border: none;
     padding: 7px 0px;
     margin: 5px;
@@ -193,7 +195,7 @@ It is using flexbox. */
 /* Formating the links of the 'Sections' button */
 .dropdowncontent a{
     display: block;
-    background-color: lightblue;
+    background-color: #463F3A;
     align-items: center;
     width: 105px;
     text-decoration: none;
@@ -203,7 +205,7 @@ It is using flexbox. */
 when you pass the mouse over it.
 The color can be changed in each page. */
 .dropdowncontent a:hover{
-    background-color: rgb(229, 158, 221);
+    background-color: #8A817C;
 }
 
 /* Formating the internal links of the drop down menu 
@@ -215,11 +217,11 @@ when you pass the mouse over it. */
 
 /* formating element "details". This is my element not covered in class */
 details {
-    border: 1px solid rgb(0, 38, 135);
+    border: 1px solid #463F3A;
     border-radius: 4px;
     /* padding: 0.5em 0.5em 0; */
     color: white;
-    background-color: rgb(0, 38, 135);
+    background-color: #463F3A;
     margin-left: 10%;
     margin-right: 10%;
     text-align: center;
@@ -239,7 +241,7 @@ details {
   }
   
   details[open] summary {
-    border-bottom: 1px solid rgb(229, 158, 221);
+    border-bottom: 1px solid #DEAE9F;
     margin-bottom: 0.5em;
   }
 
@@ -257,12 +259,12 @@ table, td, th {
 }
 
 #hrow1, #hrow2 {
-    color: rgb(243, 238, 238);
-    background-color: rgb(47, 43, 43);
+    color: #F4F3EE;
+    background-color: #463F3A;;
 }
 
 th {
-    background-color: rgb(247, 182, 192);
+    background-color: #DEAE9F;
 }
 
 /* td, th{
@@ -294,14 +296,14 @@ ul.shortscreen{
 
 .dropdowsections2 a{
     display: block;
-    background-color: lightblue;
+    background-color: #463F3A;
     align-items: center;
     width: 105px;
     text-decoration: none;
 }
 
 .dropdowsections2 a:hover{
-    background-color: rgb(229, 158, 221);;
+    background-color: #8A817C;
 }
 
 .shortscreen1:hover .dropdowsections2{
@@ -317,14 +319,14 @@ ul.shortscreen{
 
 .dropdowpages2 a{
     display: block;
-    background-color: lightblue;
+    background-color: #463F3A;
     align-items: center;
     width: 105px;
     text-decoration: none;
 }
 
 .dropdowpages2 a:hover{
-    background-color: rgb(229, 158, 221);;
+    background-color: #8A817C;
 }
 
 .shortscreen2:hover .dropdowpages2{
@@ -341,13 +343,57 @@ ul.shortscreen{
     }
 }
 
+/* Start of the grid container */
+section, #internal-link-3{
+    height: fit-content;
+    width: 100%;
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 88% 12%;
+    gap: 5px;
+    text-align: justify;
+}
+
+#grid-item1{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    padding: 0px 5px 0px 5px;
+}
+
+#grid-item2{
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    /* border: 1px solid black; */
+}
+
+/*End of the grid ocntainer  */
+
+/* Start of the multicol container */
+
+.multicol-container{
+    column-count: 2;
+    /* column-width: 25%, 75%; */
+}
+
+.multicol-container, h2{
+    column-span: all;
+}
+
+
+/* End of the multicol container */
+
 /* Formating footer.
 The colours can be changed in each page */
 footer{
     padding: 1px 0px 0px 0px;
     height: 122px;
     color: white;
-    background-color: rgb(0, 38, 135);
+    background-color: #463F3A;
     margin-top: 30%;
     margin-bottom: 0px;
 }
