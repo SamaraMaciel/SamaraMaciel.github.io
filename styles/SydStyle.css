@@ -255,7 +255,7 @@ footer div ul{
 /* Navbar, dropdown menu, and footer agreed upon and should be the same across all pages*/
  
 h1{
-    font-size: 30px;
+    font-size: xx-large;
     text-align: center;
 }
 nav{
@@ -272,6 +272,7 @@ a:visited{
 
 p{
     font-size: 20px;
+    column-span: all;
 }
 ol{
     font-size: 20px;
@@ -320,5 +321,49 @@ img{
 button{
     background-color: rosybrown;
     border-radius: 15px;
+
+}
+.multi-col{
+    max-width: auto;
+    margin: 0 auto;
+    column-width: 300px;
+    column-rule: 5px solid palevioletred;
+    column-gap: 20px;
+}
+
+.photo-grid{
+    display: grid;
+    grid-template-areas: 
+    "p1  p1  p2  p2"
+    "c1  c1  c2  c2"
+    " .   .   .   ."
+    "p3  p3   .   ."
+    "p3  p3   .   ."
+    "c3  d3   .   ."
+    ;
+    grid-template-columns: auto;
+    gap: 20px;
+}
+
+#Px1{
+    grid-area: p1;
+    border-radius: 20px;
+}
+#Px2{
+    grid-area: p2;
+    border-radius: 20px;
+}
+#Px3{
+    grid-area: p3;
+    border-radius: 20px;
+}
+#Cx1{
+    grid-area: c1;
+}
+#Cx2{
+    grid-area: c2;
+}
+#Cx3{
+    grid-area: c3;
 
 }
