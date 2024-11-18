@@ -1,50 +1,223 @@
+/*body container*/
+body{
+    width: 80%;
+    max-width: 1200px;
+    margin: auto auto 300px auto;
+    background-color: rgb(168, 162, 162);
+    color: rgba(165, 66, 66, 0.788);
+    
+}
+#container{
+    height: auto;
 
-h{
+}
+header{
+    display: block;
+    background-color:aliceblue;
+    height: 50px;
+}
+h1{
     font-size: 30px;
     text-align: center;
 }
-nav1 {
-    font-size: 15px;
-}
 
- a:link{
-        color: pink;
-    }    
+a:link{
+    color: pink;
+    display: inline-block;
+    text-align: center;
+}    
 a:visited{
         color: rgb(117, 79, 86);
-    }
-    nav1 {background-color: slategrey;
-display: flex;}
+}
+nav {background-color: slategrey;
+    font-size: 15px;
+    display: flex;
+}
+
+.navbar{
+    position: sticky;
+    top: 0px;
+}
+
+.navflex{
+    position: relative;
+    display: flex;
+    flex-wrap: center;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    
+}
+/* a.fill{
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}  */
+
 .flex-container{
     align-items: center;
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-around;
+}
+    
+.button{
+    background-color: rgb(229, 158, 221);
+    border: none;
+    padding: 7px 0px;
+    margin: 5px;
+    justify-items: center;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    width: auto;
+}  
+ul.navlinks{
+    padding-inline-start: left;
+}
+
+.navlinks, .navlinks1{
+    list-style: none;
+    display: inline-block;
+    justify-items: center;
+    text-align: center;
+}
+/* Internal links Formatting - drop down menu*/
+#internal-link0, #internal-link1, #internal-link2, #internal-link3, #internal-link4, #internal-link5 {
+    scroll-margin-top: 60px ;
+}
+
+.dropdowncontent{
+    position: absolute;
+    display: none;
+    align-items: center;
+}
+.dropdowncontent a{
+    display: block;
+    background-color: lightblue;
+    align-items: center;
+    width: 105px;
+    text-decoration: none;
+}
+.dropdowncontent a:hover{
+    background-color: rgb(229, 158, 221);
+}
+.navlinks1:hover .dropdowncontent{
+    display: block;
+    align-items: first baseline;
+}
+
+ul.shortscreen{
+    padding-inline-start: 350px;
+    position: relative;
+}
+.shortscreen1, .shortscreen2 {
+    list-style: none;
+    display: inline;
+}
+
+/* Short screen Section's menu */
+.dropdowsections2{
+    position: absolute;
+    display: none;
+
+}
+
+.dropdowsections2 a{
+    display: block;
+    background-color: lightblue;
+    align-items: center;
+    width: 105px;
+    text-decoration: none;
+}
+
+.dropdowsections2 a:hover{
+    background-color: rgb(229, 158, 221);;
+}
+
+.shortscreen1:hover .dropdowsections2{
+    display: block;
+    align-items: first baseline;
+}
+
+/* Short screen pages's menu */
+.dropdowpages2{
+    position: absolute;
+    display: none;
+}
+
+.dropdowpages2 a{
+    display: block;
+    background-color: lightblue;
+    align-items: center;
+    width: 105px;
+    text-decoration: none;
+}
+
+.dropdowpages2 a:hover{
+    background-color: rgb(229, 158, 221);;
+}
+
+.shortscreen2:hover .dropdowpages2{
+    display: block;
+    align-items: first baseline;
+}
+
+@media screen and (width <= 751px){
+    .navlinks{
+        display: none;
     }
-.navbox{
+    .shortscreen1, .shortscreen2 {
+        display: inline-block;
+    }
+}
+
+.top {
+    font-size: .8125rem;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border: 3px;
+    margin-bottom: 5px;
+}
+/* .flex-container{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    } */
+/* .navbox{
         border: 1em solid rgb(92, 62, 67);
         padding: 0.5rem;
         flex: 1;
         text-align: center;
-    }
-a.fill-div {
+    } */
+/* a.fill-div {
         display: block;
         height: 100%;
         width: 100%;
         text-decoration: none;
-    }
+    } */
 
 
-body{
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
-    background-color: rgb(168, 162, 162);
-    color: rgba(165, 66, 66, 0.788);
-    text-align: center;
-    }
+/* Formatting the color of think when you pass the mouse over it.
+This can be changed in each page. */
+a:hover{
+    color: rgb(209, 31, 90);
+}
 
+    
+
+
+    
 p{
     font-size: 20px;
 }
@@ -55,7 +228,7 @@ table {
             border: 10px solid black;
             border-collapse: collapse;
             border-style: double;
-            width: 1000px; 
+            width: fit-content; 
             height: 350px;
             margin: auto;
             padding: 25px;
@@ -65,7 +238,7 @@ table {
             }
 
     th {
-            border-width: 3px solid;
+            border-width: 3px;
             border-style: solid;
             border-color: black;
             column-width: auto;
@@ -73,7 +246,7 @@ table {
             font: bold;
         }
         td{
-            border-width: 3px solid;
+            border-width: 3px;
             border-style: solid;
             border-color: black;
             text-align: center;
@@ -106,9 +279,12 @@ menu{
     padding: 25px;
 
 }
-button{
+.pie-button{
     background-color: rosybrown;
     border-radius: 15px;
+    justify-items: center;
+    text-align: center;
+    display: inline-block;
 
 }
 footer{
