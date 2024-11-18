@@ -144,45 +144,20 @@ body {
     height: 1800px;
 }  
 
-/* grid portion */
-#intro{
-    grid-area: part-one;
-}
-
-#baking{
-    grid-area: part-two;
-}
-
-#recipe{
-    grid-area: part-three;
-    margin-left:50px;
-}
-
-#instructions{
-    grid-area:part-four;
-}
-
 #cookies{
     border:5px solid #8a817c;
     border-radius: 50px;
+    margin-top:40px;
     margin-left:100px;
-    grid-area: image;
+    margin-right:100px;
+    margin-bottom:40px;
     float:right;
 }
 
-.grid{
-    display: grid;
-    grid-template-areas: 
-        "part-one      image "
-        "part-two    part-two"
-        "part-three part-four";
-    grid-template-columns: 1fr 1fr;
-    gap:20px;
-}
 
 /* multicol portion*/
 .cols {
-    column-width: 30em;
+    column-width:auto;
     margin-top:40px;
 }
 
@@ -190,6 +165,26 @@ body {
     break-inside: avoid;
 }
 /*end multicol*/
+
+/* grid portion */
+#Recipe{
+    grid-area: part-one;
+    margin-left:50px;
+}
+
+#instructions{
+    grid-area:part-two;
+}
+
+.grid{
+    display: grid;
+    grid-template-areas: 
+        "part-one    part-two "
+        "part-three part-four";
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+}
+/*end grid portion*/
 
 footer{
     padding: 1px 0px 0px 0px;
@@ -276,27 +271,34 @@ ul.shortscreen{
 }
 
 @media screen and (width <= 1000px) {
-    #recipe{
+    #Recipe{
         justify-content: center;
         margin:auto;
+    }
+    
+    .grid{
+    display: grid;
+    grid-template-areas:
+        "part-one"
+        "part-two"
+        "part-three"
+        "part-four";
+    grid-template-columns: 1fr;
+    gap:20px;
+    }  
+
+    body{
+        height: 2500px;;
+    }
+}
+
+@media screen and (width <=500px){
+    body{
+        height:3100px;
     }
     #cookies{
         justify-content: center;
-        margin:auto;
-        width:375px;
-    }
-    .grid{
-        display: grid;
-        grid-template-areas: 
-            "part-one"
-            "image"
-            "part-two"
-            "part-three"
-            "part-four";
-        grid-template-columns: 1fr;
-        gap:20px;
-    }  
-    body{
-        height:2800px;
+        margin:auto auto 25px;
+        float:left;
     }
 }

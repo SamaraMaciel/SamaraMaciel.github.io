@@ -7,6 +7,8 @@ table {
             height: 350px;
             margin: auto;
             padding: 25px;
+            color: #f4f3ee;
+            
         }
     caption{
             font-size: xx-large;
@@ -15,7 +17,7 @@ table {
     th {
             border-width: 3px;
             border-style: solid;
-            border-color: #bcb8b1;
+            border-color: #000000;
             column-width: auto;
             text-align: center;
             font: bold;
@@ -23,25 +25,31 @@ table {
         td{
             border-width: 3px;
             border-style: solid;
-            border-color: #bcb8b1;
+            border-color: #000000;
             text-align: center;
             font: bold;
         }
        ol{
         text-align: left;
         font-size: large;
-       }
+}
 img{
     display: block; 
     margin: 20px; 
     width: 50%;
 }
-#column-c {
+caption{
+    color: #e0afa0;
+}
+.column-c{
     background-color: #8a817c;
 
 }
-#row-c {
+.row-c{
     background-color: #bcb8b1;
+}
+.note-c{
+    background-color: #e0afa0;
 }
 
 #float-img{
@@ -71,6 +79,7 @@ body {
     background-color: #463f3a;
     color:#e0afa0;
     height: auto;
+    display: block;
 }
 
 header{
@@ -254,7 +263,6 @@ ol{
     }
 }
 
-
 /* Formatting footer.
 The colours can be changed in each page */
 footer{
@@ -296,6 +304,7 @@ button{
 #Px1{
     grid-area: p1;
     border-radius: 20px;
+    border-color: #000000;
 }
 #Px2{
     grid-area: p2;
