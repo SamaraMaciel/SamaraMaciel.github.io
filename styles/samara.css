@@ -84,15 +84,10 @@ nav{
 /* General formating of the class 'navbar' set in the header element */
 .navbar{
     position: sticky;
-    /* display: flex; */
-    /* align-items: center;  */
-    /* justify-content: center; cannot use this properties with dislay block */
-    /* height: fit-content; */
-    /* top: -0.0625rem; */
+
     top: 0px;
-    /* left: 0;
-    right: 0; */
-    /* right: -10px; */
+    z-index: 1000;
+    
 }
 
 /* General configuration of the links in the nav bar.
