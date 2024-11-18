@@ -271,7 +271,7 @@ button{
 
 }
 .multi-col{
-    max-width: 400px;
+    max-width: 1800px;
     margin: 0 auto;
     column-width: 300px;
     column-rule: 5px solid #000000;
