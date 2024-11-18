@@ -1,69 +1,93 @@
-/*body container*/
-body{
+/* Formatting the shape of how the page appear in screen  - body container*/
+body {
     width: 80%;
+    /* max-width: 1200px; */
+    margin: auto;
     max-width: 1200px;
-    margin: auto auto 300px auto;
+    /* margin: auto auto 300px auto; */
     background-color: rgb(168, 162, 162);
     color: rgba(165, 66, 66, 0.788);
-    
+    text-align: center;
 }
+
+/* Formatting the height of the internal main container.
+changing this value will reduce or increase the blank space 
+between the footer and the last line of content in the page.
+id = 'container' set in the body element */
 #container{
     height: auto;
-
 }
+
+/* Here starts the header formatting */
+
+/* General formatting of the the header element.
+The background color can be changed of each page.*/
 header{
     display: block;
     background-color:aliceblue;
     height: 50px;
 }
-h1{
-    font-size: 30px;
-    text-align: center;
+
+/* Setting the height of the nav bar element */
+nav{
+    height: 50px;
 }
 
-a:link{
-    color: pink;
-    display: inline-block;
-    text-align: center;
-}    
-a:visited{
-        color: rgb(117, 79, 86);
-}
-nav {background-color: slategrey;
-    font-size: 15px;
-    display: flex;
-}
-
+/* General formatting of the class 'navbar' set in the header element */
 .navbar{
     position: sticky;
     top: 0px;
 }
 
-.navflex{
-    position: relative;
-    display: flex;
-    flex-wrap: center;
+/* General configuration of the links in the nav bar.
+This is setting the position of the rectangles the links are in.
+It's using flexbox */
+.navleft{
+    position:static;
+    display:flex;
+    flex-flow: row;
     justify-content: space-between;
     align-items: center;
     height: 50px;
-    width: 100%;
-    
 }
-/* a.fill{
-    display: block;
-    height: 100%;
-    width: 100%;
-    text-decoration: none;
-}  */
 
-.flex-container{
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: space-around;
+/* General configuration of the ul (list) element in the nav bar */
+ul.navlinks{
+    padding-inline-start: 0px;
 }
-    
+
+/* Formatting the position of the links inside the rectangles */
+.navlinks, .navlinks1{
+    list-style: none;
+    display: inline-block;
+    justify-items: center;
+    text-align: center;
+}
+
+/* Formatting the color of the link.
+This can be changed in each page.
+It's also formatting the position */
+a:link	{
+    /* box-sizing: inherit; */
+    display: inline-block;
+    color: rgb(170, 44, 156);
+    text-align: center;
+}
+
+/* Formatting the color of the link that has already been clicked.
+This can be changed in each page. */
+a:visited{
+    color: rgb(170, 44, 156);
+}
+
+/* Formatting the color of think when you pass the mouse over it.
+This can be changed in each page. */
+a:hover{
+    color: rgb(209, 31, 90);
+}
+
+/* General formatting of each li element inside the ul list.
+The color here can be changed in each page. */
 .button{
     background-color: rgb(229, 158, 221);
     border: none;
@@ -73,28 +97,32 @@ nav {background-color: slategrey;
     text-align: center;
     display: inline-block;
     cursor: pointer;
-    width: auto;
-}  
-ul.navlinks{
-    padding-inline-start: left;
+    width: 95px;
 }
 
-.navlinks, .navlinks1{
-    list-style: none;
-    display: inline-block;
-    justify-items: center;
-    text-align: center;
+/* Formatting of the cupcake image in the nav bar.
+This will be removed, probably.
+It is using flexbox. 
+Will not be used in each page*/
+#cupcakepng{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-/* Internal links Formatting - drop down menu*/
+
+/* Internal links formating - drop down menu*/
 #internal-link0, #internal-link1, #internal-link2, #internal-link3, #internal-link4, #internal-link5 {
     scroll-margin-top: 60px ;
 }
 
+/* Formatting dropdown menu of the "Sections" button */
 .dropdowncontent{
     position: absolute;
     display: none;
     align-items: center;
 }
+
+/* Formatting the links of the 'Sections' button */
 .dropdowncontent a{
     display: block;
     background-color: lightblue;
@@ -102,21 +130,35 @@ ul.navlinks{
     width: 105px;
     text-decoration: none;
 }
+
+/* Formatting the links of the 'Sections' button
+when you pass the mouse over it.
+The color can be changed in each page. */
 .dropdowncontent a:hover{
     background-color: rgb(229, 158, 221);
 }
+
+/* Formatting the internal links of the drop down menu 
+when you pass the mouse over it. */
 .navlinks1:hover .dropdowncontent{
     display: block;
     align-items: first baseline;
 }
 
+/* Crating a menu that will appear when the screen width is <=751px */
+/* All the colours in the following elements can be changed in
+each page.
+The media query in the end of this part is working
+with all the following elements. */
+
 ul.shortscreen{
-    padding-inline-start: 350px;
-    position: relative;
+    padding-inline-start: 0px;
+    position:relative;
+    right: 100px;
 }
 .shortscreen1, .shortscreen2 {
     list-style: none;
-    display: inline;
+    display: none;
 }
 
 /* Short screen Section's menu */
@@ -175,6 +217,12 @@ ul.shortscreen{
     }
 }
 
+/* Here ends the header formatting */
+
+/* Formatting of the element 'aside' - welcoming message in the top of the page. */
+/* Its using flex box - Formatting the class 'top' inside the tag aside. It's the fist text that appears in my page,
+before the nav bar. This was before the header element, so it were moved to after the 
+header element so the header will always stick to the top of the page.*/
 .top {
     font-size: .8125rem;
     display: flex;
@@ -187,37 +235,41 @@ ul.shortscreen{
     border: 3px;
     margin-bottom: 5px;
 }
-/* .flex-container{
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: space-around;
-    } */
-/* .navbox{
-        border: 1em solid rgb(92, 62, 67);
-        padding: 0.5rem;
-        flex: 1;
-        text-align: center;
-    } */
-/* a.fill-div {
-        display: block;
-        height: 100%;
-        width: 100%;
-        text-decoration: none;
-    } */
 
+/* Formatting footer.
+The colours can be changed in each page */
+footer{
+    padding: 1px 0px 0px 0px;
+    height: fit-content;
+    color: white;
+    background-color: rgb(0, 38, 135);
+    margin-top: 30%;
+    margin-bottom: 0px;
+    
 
-/* Formatting the color of think when you pass the mouse over it.
-This can be changed in each page. */
-a:hover{
-    color: rgb(209, 31, 90);
 }
 
-    
+footer div ul{
+    list-style: none;
+}
+/* Navbar, dropdown menu, and footer agreed upon and should be the same across all pages*/
+ 
+h1{
+    font-size: 30px;
+    text-align: center;
+}
+nav{
+    font-size: 15px;
+    background-color: slategrey;
+}
 
+a:link{
+        color: pink;
+    }    
+a:visited{
+        color: rgb(117, 79, 86);
+    }
 
-    
 p{
     font-size: 20px;
 }
@@ -265,30 +317,8 @@ img{
     text-align: left;
 }
 
-menu{
-    text-align: left;
-    font-size: 30px;
-}
-.smalltable{ 
-    border: 10px solid black;
-    border-collapse: collapse;
-    border-style: double;
-    width: 300px; 
-    height: 250px;
-    margin: auto;
-    padding: 25px;
-
-}
-.pie-button{
+button{
     background-color: rosybrown;
     border-radius: 15px;
-    justify-items: center;
-    text-align: center;
-    display: inline-block;
 
-}
-footer{
-    background-color: slategray;
-    padding: 2px;
-    margin: 5px;
 }
