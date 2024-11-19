@@ -226,8 +226,8 @@ body{
     margin-bottom: 2px;
     color: var(--text-color);
     width: 80%;
-    max-width: 1600px;
-    margin: 20px auto;
+    max-width: 1200px;
+    margin: auto auto auto auto;
 }
 
 /* Individual grid items */
@@ -288,7 +288,7 @@ article{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);   
     width: 77%;
     max-width: 1600px;
-    margin: 20px auto;
+    margin: auto auto auto auto;
 }
 
 #section6{
