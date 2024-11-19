@@ -5,8 +5,17 @@ body {
     margin: 0 auto 800px auto;
     background-color: #F6E9B2;
     /* End Samara's contribution */
-    /* Laarni's contribution: Update background-color */
+    /* Start Laarni's contribution: */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* End Laarni's contribution*/
 }
+/* Start Laarni's contribution*/
+html, body {
+    height: 100%;
+  }
+/* End Laarni's contribution*/
 
 .top {
     /* Start Samara's contribution */
@@ -35,6 +44,9 @@ header {
 
 footer{
     background-color: #88d086;
+    /*Start Laarni's contribution*/
+    margin-top: auto;
+    /* Laarni's contribution */
 }
 
 nav{
