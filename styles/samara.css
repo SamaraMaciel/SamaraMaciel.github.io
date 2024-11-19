@@ -398,6 +398,12 @@ section, #internal-link-3{
 
 /* End of the multicol container */
 
+#cupcake-logo {
+    float: left;
+    width: 50px;
+    height: 45px;
+}
+
 /* Formating footer.
 The colours can be changed in each page */
 footer{
