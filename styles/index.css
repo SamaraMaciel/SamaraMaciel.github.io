@@ -6,6 +6,11 @@ body {
     background-color: #e0afa0;
     /* End Samara's contribution */
     /* Laarni's contribution: Update background-color */
+    /* Start Laarni's contribution*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* End Laarni's contribution*/
 }
 /* Start Laarni's contribution*/
 html, body {
@@ -40,6 +45,9 @@ header {
 
 footer{
     background-color: #88d086;
+    /* Start Laarni's contribution*/
+    margin-top: auto;
+    /* End Laarni's contribution*/
 }
 
 nav{
