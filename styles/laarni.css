@@ -9,7 +9,7 @@
 
 /* Style for the title */
 #title {
-    font-size: 2.5rem; 
+    font-size: 1rem; 
     font-weight: bold; 
     text-align: center; 
     color: var(--text-color); 
@@ -18,6 +18,9 @@
     margin-bottom: 10px; 
     border-bottom: 2px solid var(--text-color); 
     padding-bottom: 5px; 
+    width: 80%;
+    max-width: 1200px;
+    margin: auto auto auto auto;
 }
 
 /* Header Styling Using Flex Layout */
@@ -25,6 +28,9 @@ header{
     display: block;
     background-color: var(--primary-color);
     height: 50px;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto auto auto auto;
 }
 
 /* Setting the height of the nav bar element */
@@ -210,6 +216,9 @@ ul.shortscreen{
     height: 40px;
     border: 3px;
     margin-bottom: 5px;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto auto auto auto;
 }
 
 body{
@@ -370,6 +379,9 @@ blockquote {
     margin: 20px auto; 
     padding-top: .1px;
     padding-left: 5px;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto auto auto auto;
 }
 
 
