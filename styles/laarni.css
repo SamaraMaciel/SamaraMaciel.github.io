@@ -18,6 +18,9 @@
     margin-bottom: 10px; 
     border-bottom: 2px solid var(--text-color); 
     padding-bottom: 5px; 
+    width: 80%;
+    max-width: 1200px;
+    margin: auto auto auto auto;
 }
 
 /* Header Styling Using Flex Layout */
@@ -210,6 +213,9 @@ ul.shortscreen{
     height: 40px;
     border: 3px;
     margin-bottom: 5px;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto auto auto auto;
 }
 
 body{
@@ -370,6 +376,9 @@ blockquote {
     margin: 20px auto; 
     padding-top: .1px;
     padding-left: 5px;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto auto auto auto;
 }
 
 
