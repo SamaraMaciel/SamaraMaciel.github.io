@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laarni Cerna Page_Assignment2</title>
-    <link rel="stylesheet" href="./styles/laarni.css"> 
+    <link rel="stylesheet" href="./laarni.css"> 
 </head>
-<body id="container">
-    
+<body>
     <header class="navbar">
         <nav>
             <div class="navleft">
                 <!-- Image created using power point -->
-                <img id="cupcakepng" src="./images/cupcake.png" alt="Cupcake logo" width="50" height="45">
+                <img id="cupcakepng" src="./cupcake.png" alt="Cupcake logo" width="50" height="45">
                 <!-- Adding dropdwon menu -->
                 <ul class="navlinks">
                     <li class="navlinks1"><a class="button" href="">Sections</a>
@@ -33,7 +32,7 @@
                 <!-- Adding a menu that will apear only when the screen width is <= 751px -->
                 <ul class="shortscreen">
                     <!-- Image created using power point -->
-                    <li class="shortscreen1"><a href=""></a><img class="menu2" src="./images/menu.png"  alt="Menu"  width="35" height="35">
+                    <li class="shortscreen1"><a href=""></a><img class="menu2" src="./menu.png"  alt="Menu"  width="35" height="35">
                         <div class="dropdowsections2">
                             <a href="#section1">What is Lumpia Shanghai</a>
                             <a href="#section2">About</a>
@@ -44,12 +43,13 @@
                         </div>
                     </li>
                     <!-- Image created using power point -->
-                    <li class="shortscreen2"><a href=""></a><img src="./images/home.png" alt="Page's Menu" width="35" height="35">
+                    <li class="shortscreen2"><a href=""></a><img src="./home.png" alt="Page's Menu" width="35" height="35">
                         <div class="dropdowpages2">
                             <a href="./index.html">Main Page</a>
                             <a href="./laarni.html">Laarni's Page</a>
                             <a href="./janelle.html">Janelle's Page</a>
                             <a href="./Sydneypage.html">Sydney's Page</a>
+                            <a href="./samara.html">Samara's Page</a>
                         </div>
                     </li>
                 </ul>
@@ -58,7 +58,7 @@
     </header>
 
     <aside class="top">
-        <p>This is Laarni's web page ---------------------------------------------------------------------</p>
+        <p>Hi! Laarni here...</p>
     </aside>
     
      <!--  Content-->
@@ -84,8 +84,9 @@
         <section id="section2" class="grid-container">
             <div class="grid-item">
                 <h2>About</h2>
-                <p> Lumpia Shanghai is one of my favorite make-ahead meals. Every other weekend, I roll up my sleeves and roll up a few dozen, along with 
-                    siomai,longganisa, and kikiam, to freeze for when I am too busy or tired to spend more than thirty minutes in the kitchen.         
+                <p> I am much more into baking cakes or breads. But when it comes to thinking of quick snacks or menu for guest, lumpia shanghai is one 
+                    of my go to dish.Lumpia Shanghai is one of my favorite make-ahead meals.Every other weekend, I roll up my sleeves and roll up a few 
+                    dozen, along with siomai,longganisa, and kikiam, to freeze for when I am too busy or tired to spend more than thirty minutes in the kitchen.         
                     With these food items already prepped in the freezer, a home-cooked dinner is just a matter of quick frying.   
                 </p>
             </div>
@@ -127,7 +128,7 @@
                         needed before wrapping.<br><br>
                     </p>
 
-                    <img src="./images/Lumpia_Shanghai.jpg" alt="Lumpia" class="float-left">
+                    <img src="./Lumpia_Shanghai.jpg" alt="Lumpia" class="float-left">
                
                     <p> Use fresh spring roll wrappers. Check manufacturing dates on packages, as the older the 
                         wrappers get, the less pliable and harder they are to roll.<br>
@@ -148,11 +149,11 @@
                         optimal 350F to 375 F range before adding the next round. Skim the oil in between batches
                         to remove any burnt bits.<br><br>
                     </p>
-                    <img src="./images/Lumpia_Shanghai_Sauce.jpg" alt="Sauce" class="float-right">
+                    <img src="./Lumpia_Shanghai_Sauce.jpg" alt="Sauce" class="float-right">
                     <p> Do not drain on paper towels, or they'll get soggy with the steam. Drain on a wire rack set 
                         over a baking sheet or in a fine-mesh sieve set over a bowl to catch oil drips.<br><br>
                     </p>
-                    <p>If transporting them to a party, leave the container partially open to keep the lumpia crispy 
+                    <p> If transporting them to a party, leave the container partially open to keep the lumpia crispy 
                         as long as possible.<br><br>
                     </p>
                 </div>
@@ -224,35 +225,26 @@
                     </tr>
                 </tbody>
             </table>
-            <h3>Procedure</h3>
-        <ol class=".multicol-list">
-            <li>In a bowl, combine ground chicken, green onions, water chestnuts, carrots, garlic, soy sauce, salt, and pepper until well distributed.</li>
-            <li>Separate wrappers into individual sheets and lay on a flat working surface.</li>
-            <li>Spoon about 1 heaping tablespoon of meat mixture on the lower end of the wrapper, closest to you.</li>
-            <li>Fold the bottom of wrapper over filling and continue to roll tightly into a thin log about ¾-inch thick. Wet the remaining edge of the wrapper with a dab of water to completely seal.</li>
-            <li>Repeat with the remaining mixture. Using scissors, cut each lumpia roll into about 3-inch lengths.</li>
-            <li>Using a slotted spoon or tongs, remove from the oil and drain on a wire rack set over a baking sheet. Serve immediately with sweet and sour sauce or banana ketchup</li>   
-        </ol>   
-        </article>
-
-        <!--  New Element -->
-        <article>
-            <h4>Hope you enjoy this recipe!</h4>
-            <blockquote cite="https://www.sophisticatedgourmet.com/wp-content/uploads/2016/11/food-quote-thomas-keller.webp">
-            “A recipe has no soul. You, as the cook, must bring soul to the recipe.”
-            </blockquote>
-        </article>
+               
+            <div id="multicol-container">
+                <h3>Procedure</h3>
+                <ol >
+                    <li>In a bowl, combine ground chicken, green onions, water chestnuts, carrots, garlic, soy sauce, salt, and pepper until well distributed.</li>
+                    <li>Separate wrappers into individual sheets and lay on a flat working surface.</li>
+                    <li>Spoon about 1 heaping tablespoon of meat mixture on the lower end of the wrapper, closest to you.</li>
+                    <li>Fold the bottom of wrapper over filling and continue to roll tightly into a thin log about ¾-inch thick. Wet the remaining edge of the wrapper with a dab of water to completely seal.</li>
+                    <li>Repeat with the remaining mixture. Using scissors, cut each lumpia roll into about 3-inch lengths.</li>
+                    <li>Using a slotted spoon or tongs, remove from the oil and drain on a wire rack set over a baking sheet. Serve immediately with sweet and sour sauce or banana ketchup</li>   
+                </ol>  
+             </div> 
+        </article>    
     </main>
-
-    <footer class="footer" id="footer">
-        <div>
-            <ul>
-                <li>&copy; 2024</li>
-                <li>Red Deer</li>
-                <li>Canada</li>
-                <li>Thank you for visiting my web page!</li>
-            </ul>
-        </div>
+     <!--  New Element -->
+    <footer class="footer">
+        <h4>Thank you for visiting my page. I hope you like the recipe!</h4>
+        <blockquote cite="https://www.sophisticatedgourmet.com/wp-content/uploads/2016/11/food-quote-thomas-keller.webp">
+            “A recipe has no soul. You, as the cook, must bring soul to the recipe.”
+        </blockquote>
     </footer>
 </body>
 </html>

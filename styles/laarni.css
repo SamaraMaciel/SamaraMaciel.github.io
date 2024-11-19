@@ -1,8 +1,8 @@
 /* Color Scheme */
 :root {
-    --primary-color: #4CAF50; 
+    --primary-color: #3C3D37; 
     --secondary-color: #FFC107; 
-    --accent-color: #FF5722; 
+    --accent-color: #e0afa0; 
     --background-color: #F5F5F5; 
     --text-color: #333; 
   }
@@ -16,7 +16,7 @@
     text-transform: uppercase; 
     letter-spacing: 2px; 
     margin-bottom: 10px; 
-    border-bottom: 2px solid #333; 
+    border-bottom: 2px solid var(--text-color); 
     padding-bottom: 5px; 
 }
 
@@ -75,7 +75,7 @@ a:visited{
     color: white;
 }
 
-/* Formatting the color of think when you pass the mouse over it.*/
+/* Formatting the color of link when the mouse over it.*/
 a:hover{
     color: rgb(209, 31, 90);
 }
@@ -225,6 +225,9 @@ body{
     border-bottom: 1px solid #ddd;
     margin-bottom: 2px;
     color: var(--text-color);
+    width: 80%;
+    max-width: 1600px;
+    margin: 20px auto;
 }
 
 /* Individual grid items */
@@ -255,6 +258,7 @@ body{
     border-radius: 10px;
     border: 1px solid var(--accent-color);
 }
+
 /* Image floated to the left */
 .float-left {
     float: left;
@@ -267,12 +271,12 @@ body{
     margin-left: 15px; 
 }
 
-/* Clearfix to ensure container wraps floated elements */
+Clearfix to ensure container wraps floated elements
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
-}
+} 
 
 section h2 {
     margin-top: 0;
@@ -281,7 +285,10 @@ section h2 {
 article{
     border-bottom: 1px solid #f6f2f2;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);   
+    width: 77%;
+    max-width: 1600px;
+    margin: 20px auto;
 }
 
 #section6{
@@ -296,48 +303,51 @@ table {
 }
 
 table th, table td {
-    border: 1px solid #1e950c;
+    border: 1px solid #044A42;
     padding: 8px;
     text-align: left;
 }
 
 table th {
-    background-color: #313e19;
+    background-color: #062925;
     font-weight: bold;
     color: white;
     text-align: center;
 }
 
 /* Multicolumn Styling*/
-.multicol-list {
-    column-count: 3; 
-    column-gap: 20px; 
-    padding: 0;
-    margin: 0;
-    color: var(--text-color); ;
+#multicol-container, h2{
+    column-span: all;
 }
 
-.multicol-list li {
+#multicol-container {
+    width: 81%;
+    column-count: 2; 
+    column-gap: 20px; 
+    padding: 0;
+    color: var(--text-color); 
+    height: auto;
+}
+
+#multicol-container, h3{
+    column-span: all;
+}
+
+#multicol-container li {
     margin-bottom: 10px;
     padding-left: 20px;
     position: relative;
+    margin: 20px
 }
 
-.multicol-list li:before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    
-}
-
-@media (max-width: 768px) {
-    .multicol-list {
+@media (max-width: 790px) {
+    #multicol-container {
         column-count: 2;
     }
 }
 
-@media (max-width: 480px) {
-    .multicol-list {
+@media (max-width: 490px) {
+    #multicol-container {
         column-count: 1;
     }
 }
@@ -352,8 +362,14 @@ blockquote {
 
 .footer{
     margin-bottom: 0%;
-    background-color: #FFC107;
+    background-color: black;
     color: white;
+    width: 97%;
+    height: 122px;
+    max-width: 1700px;
+    margin: 20px auto; 
+    padding-top: .1px;
+    padding-left: 5px;
 }
 
 
