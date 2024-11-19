@@ -3,9 +3,10 @@ body {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto 800px auto;
-    background-color: #F6E9B2;
+    background-color: #e0afa0;
     /* End Samara's contribution */
     /* Laarni's contribution: Update background-color */
+    /* Sydney updated Colours for Assignment 2 */
 }
 
 .top {
@@ -13,8 +14,8 @@ body {
     font-size: .8125rem;
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
-    color: aliceblue;
-    background-color: #0A6847;
+    color: #bcb8b1;
+    background-color: #463f3a;
     align-items: center;
     justify-content: center;
     height: 40px;
@@ -27,14 +28,15 @@ body {
 header {
     /* Start Samara's contribution */
     display: block;
-    background-color:#7ABA78;
+    background-color:#bcb8b1;
     height: 50px;
    /* End Samara's contribution */
    /* Laarni's contribution: Update background-color */
 }
 
 footer{
-    background-color: #88d086;
+    background-color: #bcb8b1;
+    color: #463f3a;
 }
 
 nav{
@@ -83,8 +85,8 @@ a:link	{
 
 .button {
     /* Start Samara's contribution */
-    background-color: #E2BFD9;
-    border: none;
+    background-color: #8a817c;
+    border: 2px solid;
     padding: 7px 0px;
     margin: 5px;
     justify-items: center;
@@ -92,7 +94,7 @@ a:link	{
     display: inline-block;
     cursor: pointer;
     width: 95px;
-    color: black;
+    color: #463f3a;
     /* End Samara's contribution */
     /* Laarni's contribution: Update background-color */
 }
@@ -118,14 +120,15 @@ ul.shortscreen{
 
 .dropdowpages1 a{
     display: block;
-    background-color: lightblue;
+    background-color: #463f3a;
     align-items: center;
     width: 105px;
     text-decoration: none;
+    color: #f4f3ee;
 }
 
 .dropdowpages1 a:hover{
-    background-color: rgb(229, 158, 221);;
+    background-color: #bcb8b1;
 }
 
 .shortscreen1:hover .dropdowpages1{
