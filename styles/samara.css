@@ -1,8 +1,9 @@
 /* Formating the shape of how the page appear in screen  - body container*/
 body {
+    /* height: 2300px; */
     width: 80%;
     max-width: 1200px;
-    margin: auto auto 300px auto;
+    margin: auto auto auto auto;
     background-color: #F4F3EE;
 }
 
@@ -10,8 +11,11 @@ body {
 changing this value will reduce or increase the blanck space 
 between the footer and the last line of content in the page.
 id = 'container' set in the body element */
-html,   #container{
-    height: 2200px;
+/* Setting the html and the class of the body container fixed the problem of the 
+stick nav bar tha wasn't sticking as the bar roled near the botton of the page.
+This also fixed the position of the footer */
+html, #container{
+    height: auto;
 
 }
 
@@ -397,12 +401,14 @@ section, #internal-link-3{
 /* Formating footer.
 The colours can be changed in each page */
 footer{
+    /* position:absolute;
+    bottom: 0; */
     padding: 1px 0px 0px 0px;
     height: 122px;
     color: white;
     background-color: #463F3A;
-    margin-top: 30%;
-    margin-bottom: 0px;
+    margin-top: 20%;
+    margin-bottom: 0%;
 }
 
 footer div ul{
