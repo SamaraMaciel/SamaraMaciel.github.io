@@ -10,8 +10,9 @@ body {
 changing this value will reduce or increase the blanck space 
 between the footer and the last line of content in the page.
 id = 'container' set in the body element */
-#container{
-    height: 1800px;
+html,   #container{
+    height: 2200px;
+
 }
 
 /* Formating the first container created with a div element inside the main element.
@@ -86,7 +87,7 @@ nav{
     position: sticky;
 
     top: 0px;
-    z-index: 1000;
+    /* z-index: 1900; */
     
 }
 
