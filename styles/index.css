@@ -9,11 +9,12 @@
 }
 
 /* ====== General ====== */
-a {
-    text-decoration: none;
-}
 body {
     background-color: var(--body-bg-color);
+}
+
+a {
+    text-decoration: none;
 }
 
 /* ====== Header ====== */
