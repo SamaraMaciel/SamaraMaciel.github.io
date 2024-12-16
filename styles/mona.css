@@ -254,7 +254,7 @@ header ul li {
 /* Carousel */
 #myCarousel.container {
     padding: 0% 15% 0% 15%;
-    background-image: url("./catbackground3.png");
+    background-image: url("../images/Mona/catbackground3.png");
 }
 
 #myCarousel {
