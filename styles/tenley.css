@@ -1,0 +1,285 @@
+/* header */
+header{
+    padding-left: 500px;
+    padding-top:10px;
+    justify-content: center;
+    align-items: center;
+    background-color:#bcb8b1;
+    height:150px;
+    position: sticky;
+    top: 0px;
+    width:100%;
+    z-index: 2;
+}
+
+/* nav bar */
+.navlinks{
+    list-style: none;
+    display: inline-block;
+    justify-items: center;
+    text-align: center;
+}
+
+
+a:link	{
+    display: inline-block;
+    color: #f4f3ee;
+    text-align: center;
+}
+
+
+a:visited{
+    color: #f4f3ee;
+}
+
+
+a:hover{
+    color: #e0afa0;
+}
+
+ul.navlinks{
+    padding-inline-start: 0px;
+}
+
+
+.button{
+    background-color: #8b4513;
+    border: none;
+    border-radius: 10px;
+    padding: 7px 0px;
+    margin: 5px;
+    justify-items: center;
+    display: inline-block;
+    cursor: pointer;
+    width: 95px;
+    
+}
+
+
+/* side bar */
+.sidebar{
+    height: 100%; 
+    width: 30%; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: gray; 
+    overflow-x: hidden; 
+    padding-top: 150px;
+    padding-bottom: 100px;
+    padding-left:10px;
+    padding-right:10px;
+    overflow-y:hidden ;
+}
+
+#shortscreen-text{
+    display:none;
+}
+
+.row{
+    padding-top:10px;
+}
+
+.container{
+    margin-top:20px;
+}
+
+
+/* main content */
+main{
+    padding-left:35%;
+    padding-top:30px;
+    width:95%;
+}
+
+h3{
+    padding-bottom:20px;
+}
+
+#main-content{
+    height:800px;
+}
+
+#myCarousel{
+    width:300px;
+    float:right;
+    z-index: 0;
+    padding-left: 20px;
+    padding-right:20px;
+}
+
+/* footer */
+footer{
+    padding-left:500px;
+    padding-top:20px;
+    background-color: #8b4513;
+    position:fixed;
+    bottom:0;
+    width:100%;
+    height:100px;
+    color:white;
+    z-index: 2;
+}
+
+
+/* shortscreen navs*/
+#shortscreen-card, .navlinks1 {
+    display:none;
+}
+
+.dropdowncontent a:hover{
+    color:#8b4513;
+}
+
+.navlinks1:hover .dropdowncontent{
+    display: block;
+    align-items: first baseline;
+}
+
+
+#myCarousel, #Biograpy {
+    scroll-margin-top: 60px ;
+}
+
+.dropdowncontent{
+    position: absolute;
+    display: none;
+    align-items: center;
+    z-index: 3;
+}
+
+.dropdowncontent a{
+    display: block;
+    background-color: #bcb8b1;
+    align-items: center;
+    width: 105px;
+    text-decoration: none;
+}
+
+ul.shortscreen{
+    padding-inline-start: 0px;
+    position:fixed;
+    padding-top:10px;
+    left: 300px;
+}
+.shortscreen1, .shortscreen2 {
+    list-style: none;
+    display: none;
+}
+
+.dropdowpages2{
+    position: absolute;
+    display: none;
+}
+
+.dropdowpages2 a{
+    display: block;
+    background-color: #8a817c;
+    align-items: center;
+    width: 105px;
+    text-decoration: none;
+}
+
+.dropdowpages2 a:hover{
+    color:#8b4513;
+}
+
+.shortscreen2:hover .dropdowpages2{
+    display: block;
+    align-items: first baseline;
+}
+
+
+/* media queries */
+@media screen and (width <=1250px) {
+    .card-body h5{
+        display:none;
+    }
+}
+
+@media screen and (width <= 1000px){
+    .navlinks{
+        display: none;
+    }
+    .shortscreen1, .shortscreen2 {
+        display: inline-block;
+    }
+    header{
+        padding-left:300px;
+        z-index: 1;
+    }
+
+    #main-content{
+        height:1300px;
+    }
+    #myCarousel{
+        padding-bottom:20px;
+        width:95%;
+    }
+    .card-body p{
+        display:none;
+    } 
+
+    #shortscreen-text{
+        display:inline-block;
+    }
+
+    
+    
+    .sidebar{
+        padding:0px 0px 0px 0px;
+        z-index: 2;
+    }
+    .row{
+        padding-top:0px;
+    }
+    .card{
+        width:150px;
+    }
+    footer{
+        padding-left:300px;
+        z-index: 1;
+    }
+}
+
+@media screen and (width <= 600px) {
+    header{
+        padding-left:180px;
+    }
+    ul.shortscreen{
+        left:180px;
+    }
+    .navlinks1{
+        display:inline-block;
+    }
+    .card{
+        width:100%;
+    }
+    #myCarousel{
+        padding-left:0px;
+        padding-right:0px;
+        width:100%;
+    }
+    #main-content{
+        height:1300px;
+    }
+    footer{
+        padding-left:200px;
+        position:relative;
+        padding-bottom:100px;
+    }
+}
+
+@media screen and (width <= 450px) {
+    header{
+        padding-left:130px;
+    }
+    ul.shortscreen{
+        left:130px;
+    }
+    
+    footer{
+        padding-left:130px;
+    }
+}
