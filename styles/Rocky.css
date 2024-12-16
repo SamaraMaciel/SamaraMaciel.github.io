@@ -34,3 +34,6 @@ p{
     padding-left: 20px;
     padding-right:20px;
 }
+#myCarousel, #Biograpy {
+    scroll-margin-top: 60px ;
+}
