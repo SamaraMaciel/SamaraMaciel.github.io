@@ -87,6 +87,7 @@ ul.navlinks{
 
 .container{
     margin-top:20px;
+    margin-bottom:200px;
 }
 
 
@@ -121,7 +122,6 @@ footer{
     position:fixed;
     bottom:0;
     width:100%;
-
     color:white;
     z-index: 2;
 }
@@ -229,9 +229,7 @@ ul.shortscreen{
         display: inline-block;
     }
     header{
-        padding-left:300px;
         height:100px;
-        z-index: 1;
     }
 
     #main-content{
@@ -243,8 +241,8 @@ ul.shortscreen{
     }
         
     .sidebar{
-        padding:0px 0px 0px 0px;
-        z-index: 2;
+        padding:100px 0px 0px 0px;
+       
         overflow: scroll;
     }
     .row{
@@ -253,10 +251,7 @@ ul.shortscreen{
     .card{
         width:150px;
     }
-    footer{
-        padding-left:300px;
-        z-index: 1;
-    }
+
 }
 
 @media screen and (width <= 600px) {
@@ -276,12 +271,9 @@ ul.shortscreen{
         width:100%;
     }
     #main-content{
-        height:1300px;
+        height:1000px;
     }
-    footer{
-        padding-left:33%;
 
-    }
 }
 
 @media screen and (width <= 450px) {
@@ -291,9 +283,10 @@ ul.shortscreen{
     ul.shortscreen{
         left:130px;
     }
-    
-    footer{
-        padding-left:130px;
-    }
-}
 
+    #main-content{
+        height:1600px;
+    }
+    
+
+}
