@@ -1,0 +1,36 @@
+
+body{
+    --bs-body-bg: #778899;
+    margin: auto;
+    padding: auto;
+
+}
+
+
+nav{
+    height: auto;
+    margin: auto;
+    padding: auto;
+    justify-content: center;
+}
+
+h1{
+    justify-content: center;
+    height: auto;
+    margin: 2%;
+    padding: 2%;
+}
+
+p{
+    height: auto;
+    margin: 2%;
+    padding: auto;
+}
+
+#myCarousel{
+    width:300px;
+    float:right;
+    z-index: 0;
+    padding-left: 20px;
+    padding-right:20px;
+}
