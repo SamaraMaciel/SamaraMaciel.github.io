@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="mona.css">
+
+    <title>Mona's Biography</title>
+</head>
+<body>
+
+    <!-- ============ HEADER ============ -->
+    <header class="header__SM d-flex flex-nowrap z-3">
+        <div class="row flex-nowrap no-gutters align-items-center">
+            <div class="col">
+                <a href="index.html">
+                    <img src="catLogo.png" alt="Cat Logo">
+                    <span>Cat_Family</span>
+                </a>
+            </div>
+    
+            <nav class=" col-10 text-center ">
+                <ul class="d-inline-flex flex-nowrap">
+                    <li class="nav-item">
+                        <a href="Mona.html">
+                            <img src="MonaProfile.png" alt="MonaProfile" class="rounded-circle" id="MonaProfile">
+                            <span>Mona</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html">
+                            <img src="TenleyProfile.png" alt="TenleyProfile" class="rounded-circle" id="TenleyProfile">
+                            <span>Tenley</span>
+                        </a>
+                        
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html">
+                            <img src="MaxwellProfile.png" alt="MaxwellProfile" class="rounded-circle" id="MaxwellProfile">
+                            <span>Maxwell</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html">
+                            <img src="RockyProfile.png" alt="RockyProfile" class="rounded-circle" id="RockyProfile">
+                            <span>Rocky</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ============ ASIDE ============ -->
+    <aside class="sidebar container" id="sidebar">
+        <ul class="row sidebar-nav d-inline-flex" id="sidebar-nav">
+            <li class="nav-item col-md-4">
+                <a class="btn btn-primary" href="#internal-link1" role="button">
+                    <span>Biography</span>
+                </a>
+            </li>
+            
+            <li class="nav-item col-md-3">
+                <a class="btn btn-primary" href="#internal-link2" role="button">
+                    <span>Routine</span>
+                </a>
+            </li>
+
+            <li class="nav-item col-md-5">
+                <a class="btn btn-primary" href="#internal-link3" role="button">
+                    <span>Suggestions</span>
+                </a>
+            </li>
+            
+        </ul>
+        
+        <div id="card" class="container">
+            <div class="card">
+                <img src="./images/Mona/mona7.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Mona lying down on the computer.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/Mona/mona10.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Mona and Tenley trying to decide if they can play with the cables.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/Mona/mona6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Mona sleeping in her favorite box.</p>
+                </div>
+            </div>
+        </div>
+
+    </aside>
+
+    <!-- ============ MAIN ============ -->
+    <main class="main" id="main">
+        <h1>Hi! I am Mona</h1>
+
+        <section id="internal-link1">
+            <br>
+            <h2>Biography</h2>
+            <p>
+                “Mona is my sweet little weirdo – she is about 6 years old now. At first glance, she seems like a 
+                tough cat to love: always on edge, anxious, shy, and seems to not like being touched. But she just 
+                takes some time to warm up, and once she does, she will jump up on your desk and rub against you 
+                for hours, not leaving until you give her just the right amount of attention.
+                She is extremely talkative, always meowing wherever she goes. She’s also a bit of a brat when it 
+                comes to the litter box – imagine not flushing the toilet, that’s her! Her name is actually based 
+                on the cat Morgana from Persona 5, a game my girlfriend at the time and I were playing together. 
+                It was her idea to name Mona, and it stuck!
+                Despite her being a bit of a brat, she’s always been there for me, and I look forward to having 
+                her be a little pest for the years to come!”
+            </p>
+        </section>
+
+        <section id="internal-link2">
+            <h2>Some of Mona's routine:</h2>
+            <br>
+            <div id="myCarousel" class=" container d-flex carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="./images/Mona/mona9.jpg" id="Carousel_img1" class="d-block w-100" alt="Mona1">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="./images/Mona/mona6.jpg" id="Carousel_img2" class="d-block w-100" alt="Mona2">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="./images/Mona/mona2.jpg" id="Carousel_img3" class="d-block w-100" alt="Mona3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                </div>
+        </section>
+
+        <section id="internal-link3">
+            <p></p>
+            <h2>Suggestions</h2>
+            <p>Send your suggestions if you would like to know more about Mona.</p>
+            <form action="#" id="myForm">
+                <label for="FName" class="form-label" >Fist Name: </label>
+                <input type="text" class="form-control" id="FName" name="Fname" value="">
+                <label for="LName" class="form-label">Last Name: </label>
+                <input type="text" class="form-control" id="LName" name="Lname" value="">
+                <p></p>
+                <label for="email" class="form-label">Enter Your Email: </label>
+                <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Username" id="email">
+                            <span class="input-group-text">@</span>
+                            <input type="text" class="form-control" placeholder="Domain" id="domain">
+                </div>
+                <p></p>
+                  <p></p>
+                  <label for="TextArea" class="form-label">Include your opinion: </label>
+                  <br>
+                  <textarea class="form-control" cols="5" id="TextArea"></textarea>
+                  <p></p>
+                  <button type="submit" class="btn btn-primary form-btn__SM" onclick="userName()">Submit</button>
+        
+            </form>
+        </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer" id="footer">
+        <div class="copyright">
+            &copy; Copyright <strong><span>Travis Cattington</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+            Designed by Samara
+        </div>
+    </footer>
+
+    <script src="./mona.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+</body>
+</html>
