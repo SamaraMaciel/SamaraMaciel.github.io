@@ -1,6 +1,4 @@
 function selectFavoritePet(){
-    let selected = document.querySelector('input[name="Choose"]:checked').value;
-    console.log(selected);
     let user_Name = document.getElementById("userName").value;
 
     if (user_Name != ""){
