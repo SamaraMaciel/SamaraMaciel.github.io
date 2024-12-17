@@ -141,8 +141,23 @@ header ul li {
 
 /* ====== Main ====== */
 #main{
-    margin: 86px 0px 59.5px 25%;
+    margin: 86px 10px 59.5px 27%;
     padding: 20px 15px;
+}
+
+.badge{
+    margin:5px;
+}
+
+main h2{
+    margin-bottom:20px;
+}
+
+main div{
+    padding:20px;
+    margin-bottom:15px;
+    border:solid 1px;
+    border-color:black;
 }
 
 /* ====== Footer ====== */
