@@ -3,25 +3,22 @@ let MaxwellValue = 7;
 let TenleyValue = 6;
 let RockyValue = 5;
 
+
+
 function selectFavoritePet(){
     let user_Name = document.getElementById("userName").value;
 
     if (user_Name != ""){
         if(document.getElementById("radio1").checked){
-            // let user_Name = document.getElementById("userName").value;
-            let radio_1 = document.getElementById("radio1_value").textContent;
             MaxwellValue = MaxwellValue + 1;
             displayChart()
         } else if(document.getElementById("radio2").checked){
-            let radio_2 = document.getElementById("radio2_value").textContent;
             MonaValue = MonaValue + 1;
             displayChart()
         } else if(document.getElementById("radio3").checked){
-            let radio_3 = document.getElementById("radio3_value").textContent;
             RockyValue = RockyValue + 1;
             displayChart()
         } else if(document.getElementById('radio4').checked){
-            let radio_4 = document.getElementById("radio4_value").textContent;
             TenleyValue = TenleyValue + 1;
             displayChart()
         } else { 
@@ -39,7 +36,7 @@ function clearForm() {
 }
 
 function displayChart(){
-    $('#selectform').css('visibility', 'hidden');
+    $('#selectform').css('display', 'none');
     new Chart("myChart", {
         type: "bar",
         data: {
