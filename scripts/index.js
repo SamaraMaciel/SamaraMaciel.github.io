@@ -46,15 +46,18 @@ function displayChart(){
         labels: ["Mona","Tenley","Maxwell","Rocky"],
         datasets: [{
             backgroundColor: ['DarkMagenta','SaddleBrown','DarkRed','LightSlateGrey'],
-            data: [MonaValue,TenleyValue,MaxwellValue,RockyValue]
-        }]
+            data: [MonaValue,TenleyValue,MaxwellValue,RockyValue]}]
         },
         options: {
         legend: {display: false},
         title: {
             display: true,
             text: "Favourite Pets"
+        },
+        scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: true, }}]}
         }
-        }
-    });
-}
+        })
+    };
