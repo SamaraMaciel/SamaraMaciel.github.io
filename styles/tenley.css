@@ -133,6 +133,10 @@ footer{
     
 }
 
+.navlinks1 {
+    display:none;
+}
+
 .navlinks1 a{
     color:#f4f3ee;
 }
