@@ -21,50 +21,54 @@
 </head>
 <body>
 
-    <!-- ============ HEADER ============ -->
-    <header class="header__SM d-flex flex-nowrap z-3">
-        <div class="row flex-nowrap no-gutters align-items-center">
-            <div class="col">
-                <a href="./index.html">
-                    <img src="./images/catLogo.png" alt="Cat Logo">
-                    <span>Pet Family</span>
+    <!-- ~~~ Header ~~~ -->
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg header__SM" role="navigation">
+            <div class="container-fluid">
+                <a class="navbar-brand header__SM_DD" href="index.html">
+                    <img src="./images/catLogo.png" alt="Page's Menu" width="35" height="35">
+                    <span>HOME</span>    
                 </a>
-            </div>
-
-            <nav class=" col-10 text-center ">
-                <ul class="d-inline-flex flex-nowrap">
-                    <li class="nav-item">
-                        <a href="./mona.html">
-                            <img src="./images/MonaProfile.png" alt="MonaProfile" class="rounded-circle" id="MonaProfile">
-                            <span>Mona</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./tenley.html">
-                            <img src="./images/TenleyProfile.png" alt="TenleyProfile" class="rounded-circle" id="TenleyProfile">
-                            <span>Tenley</span>
-                        </a>
-                        
-                    </li>
-                    <li class="nav-item">
-                        <a href="./Maxwell.html">
-                            <img src="./images/MaxwellProfile.png" alt="MaxwellProfile" class="rounded-circle" id="MaxwellProfile">
-                            <span>Maxwell</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./Rocky.html">
-                            <img src="./images/RockyProfile.png" alt="RockyProfile" class="rounded-circle" id="RockyProfile">
-                            <span>Rocky</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#burgerMenu" aria-controls="burgerMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse header__SM_DD" id="burgerMenu">
+                    <nav class="d-flex flex-nowrap z-3 col-10 text-center">
+                        <ul class="d-inline-flex flex-nowrap navbar-nav">
+                            <li class="nav-item">
+                                <a href="./mona.html">
+                                    <img src="./images/MonaProfile.png" alt="MonaProfile" class="rounded-circle" id="MonaProfile">
+                                    <span>Mona</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./tenley.html">
+                                    <img src="./images/TenleyProfile.png" alt="TenleyProfile" class="rounded-circle" id="TenleyProfile">
+                                    <span>Tenley</span>
+                                </a>    
+                            </li>
+                            <li class="nav-item">
+                                <a href="./Maxwell.html">
+                                    <img src="./images/MaxwellProfile.png" alt="MaxwellProfile" class="rounded-circle" id="MaxwellProfile">
+                                    <span>Maxwell</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./Rocky.html">
+                                    <img src="./images/RockyProfile.png" alt="RockyProfile" class="rounded-circle" id="RockyProfile">
+                                    <span>Rocky</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>   
+        </nav>
     </header>
 
     <!-- ============ ASIDE ============ -->
     <aside class="sidebar" id="sidebar" >
+        <h3>Page Naviagtion</h3>
         <ul class="sidebar-nav" id="sidebar-nav">
             <li class="nav-item">
                 <a href="#section1">
@@ -78,17 +82,12 @@
             </li>
             <li class="nav-item">
                 <a href="#section3">
-                    <span>Space Making Post </span>
+                    <span>Space Making Post</span>
                 </a>
-             <!-- </li>
-               <li class="nav-item">
-                <a href="index.html">
-                    <span>Section4</span>
-                </a> 
-            </li>-->
         </ul>
         
         <!-- form -->
+         <h5>Vote!</h5>
         <form action="#" id="selectform">
             <div class="form-check">
                 <p id="display">Select your prefered pet: </p>
@@ -119,8 +118,8 @@
                         Tenley
                     </label>
                 </div>
-                <button type="button" class="btn btn-primary form-btn__SM" onclick="selectFavoritePet()">Submit</button>
-                <button type="button" class="btn btn-primary form-btn__SM" onclick="clearForm()">Clear</button>
+                <button type="button" class="btn form-btn__SM btn_c" onclick="selectFavoritePet()">Submit</button>
+                <button type="button" class="btn form-btn__SM btn_c" onclick="clearForm()">Clear</button>
             </div>
         </form>
         <canvas id="myChart"></canvas>
@@ -178,10 +177,10 @@
     <!-- ============ FOOTER ============ -->
     <footer class="footer" id="footer">
         <div class="copyright">
-            &copy; Copyright <strong><span>Travis Cattington</span></strong>. All Rights Reserved
+            &copy; Copyright 2024 <strong><span>Travis Cattington</span></strong> All Rights Reserved
         </div>
         <div class="credits">
-            Designed by Group2
+            All images supplied by Travis Cattington. Designed by Group A2.
         </div>
     </footer>
     
