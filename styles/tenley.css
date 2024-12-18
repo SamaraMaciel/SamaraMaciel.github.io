@@ -225,6 +225,10 @@ ul.shortscreen{
     .card{
         width:100%;
     }
+    .card-title{
+        display:none;
+    }
+    
     #myCarousel{
         padding-left:0px;
         padding-right:0px;
