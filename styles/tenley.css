@@ -11,6 +11,7 @@ header{
 
 header h1 {
     display:none;
+    
 }
 
 /* nav bar */
@@ -90,7 +91,7 @@ ul.navlinks{
 /* main content */
 main{
     padding-left:35%;
-    padding-top:45px;
+    padding-top:150px;
     width:95%;
     margin-bottom:40%;
 }
@@ -133,10 +134,6 @@ footer{
     
 }
 
-.navlinks1 {
-    display:none;
-}
-
 .navlinks1 a{
     color:#f4f3ee;
 }
@@ -150,6 +147,10 @@ ul.shortscreen{
     padding-top:15px;
     display:flex;
     flex-flow: row;
+}
+
+.navlinks1 {
+    display:none;
 }
 
 .shortscreen2 {
@@ -199,8 +200,8 @@ ul.shortscreen{
     #myCarousel{
         padding-bottom:20px;
         width:95%;
-    }
-        
+    } 
+
     .sidebar{
         padding:100px 0px 0px 0px;
         overflow: scroll;
@@ -218,6 +219,9 @@ ul.shortscreen{
     header{
         padding-left:180px;
     }
+    h1{
+        padding-top:7px;
+    }
     ul.shortscreen{
         left:10px;
     }
@@ -228,11 +232,12 @@ ul.shortscreen{
     .card-title{
         display:none;
     }
-    
     #myCarousel{
         padding-left:0px;
         padding-right:0px;
         width:100%;
     }
+
+
 
 }
