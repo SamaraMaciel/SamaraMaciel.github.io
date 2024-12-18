@@ -14,6 +14,11 @@ header div .col {
     margin-left: 2%;
 }
 
+.col-10 {
+    width: 90vmax; 
+    padding-right: 20%;
+    padding-left: 20%;
+}
 
 header ul li {
     width:max-content;
@@ -98,7 +103,8 @@ h2{
 /* footer */
 footer{
     padding-left:20px;
-    padding-top:20px;
+    padding-top:10px;
+    padding-bottom: 5px;
     background-color: #8b4513;
     position:fixed;
     bottom:0;
@@ -107,6 +113,15 @@ footer{
     z-index: 2;
 }
 
+.footer .copyright {
+    text-align: center;
+}
+
+.footer .credits{
+    padding-top: 5px;
+    text-align: center;
+    font-size:15px;
+}
 
 /* shortscreen navs*/
 .button{
@@ -127,6 +142,7 @@ footer{
 .navlinks1 a:hover{
     color:#bcb8b1;
 }
+
 .navlinks1 {
     display:none;
 }
@@ -169,13 +185,21 @@ footer{
         background-color: #bcb8b1;
         padding-bottom:10px;
     }
+
+    .col-10{
+        padding-left: 0%;
+    }
+
+    header div .col {
+        min-width: 90px;
+    }
+
+    footer .copyright{
+        font-size:15px;
+    }
 }
 
 @media screen and (width <= 600px) {
-    header{
-        padding-left:180px;
-    }
-
     .card{
         width:100%;
     }
