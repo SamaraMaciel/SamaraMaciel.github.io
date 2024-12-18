@@ -127,9 +127,12 @@ footer{
 .navlinks1 a:hover{
     color:#bcb8b1;
 }
-
 .navlinks1 {
     display:none;
+}
+
+#myCarousel, #Biograpy {
+    scroll-margin-top: 100px ;
 }
 
 /* media queries */
