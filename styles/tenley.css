@@ -9,20 +9,11 @@ header{
     height: 84px;
 }
 
-header h1 {
-    display:none;
-    
-}
-
 /* nav bar */
 header div .col {
     margin-left: 2%;
 }
 
-header ul {
-    list-style: none;
-    margin: 2px;
-}
 
 header ul li {
     width:max-content;
@@ -32,10 +23,6 @@ header ul li {
 #MonaProfile, #TenleyProfile, #MaxwellProfile, #RockyProfile {
     width: 46px;
     height: 46px;
-}
-
-nav{
-    margin-left:25%;
 }
 
 a:link	{
@@ -91,12 +78,12 @@ ul.navlinks{
 /* main content */
 main{
     padding-left:35%;
-    padding-top:150px;
+    padding-top:50px;
     width:95%;
     margin-bottom:40%;
 }
 
-h3{
+h2{
     padding-bottom:20px;
 }
 
@@ -141,41 +128,9 @@ footer{
     color:#bcb8b1;
 }
 
-ul.shortscreen{
-    padding-inline-start: 0px;
-    position:fixed;
-    padding-top:15px;
-    display:flex;
-    flex-flow: row;
-}
-
 .navlinks1 {
     display:none;
 }
-
-.shortscreen2 {
-    list-style: none;
-    display: none;
-}
-
-.dropdowpages2{
-    position: absolute;
-    display: none;
-}
-
-.dropdowpages2 a{
-    display: block;
-    background-color: #8a817c;
-    align-items: center;
-    width: 105px;
-    text-decoration: none;
-}
-
-.shortscreen2:hover .dropdowpages2{
-    display: block;
-    align-items: first baseline;
-}
-
 
 /* media queries */
 @media screen and (width <= 1300px){
@@ -184,17 +139,8 @@ ul.shortscreen{
     }
 }
 @media screen and (width <= 1000px){
-    .navigation{
-        display: none;
-    }
-    header h1{
-        display:inline-block;
-    }
     .navlinks1{
         display:inline-block;
-    }
-    .shortscreen1, .shortscreen2 {
-        display: inline-block;
     }
 
     #myCarousel{
@@ -215,15 +161,16 @@ ul.shortscreen{
 
 }
 
+@media screen and (width<=768px){
+    #burgerMenu{
+        background-color: #bcb8b1;
+        padding-bottom:10px;
+    }
+}
+
 @media screen and (width <= 600px) {
     header{
         padding-left:180px;
-    }
-    h1{
-        padding-top:7px;
-    }
-    ul.shortscreen{
-        left:10px;
     }
 
     .card{
@@ -232,6 +179,7 @@ ul.shortscreen{
     .card-title{
         display:none;
     }
+    
     #myCarousel{
         padding-left:0px;
         padding-right:0px;

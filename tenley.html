@@ -5,63 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tenley</title>
     <link rel="stylesheet" href="./styles/tenley.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <header class="fixed-top">
-        <ul class="shortscreen">
-            <li class="shortscreen2"><a href=""></a><img src="./images/catLogo.png" alt="Page's Menu" width="35" height="35">
-                <div class="dropdowpages2">
-                    <a href="./index.html">Main</a>
-                    <a href="./Maxwell.html">Maxwell</a>
-                    <a href="./mona.html">Mona</a>
-                    <a href="./Rocky.html">Rocky</a>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-md border-bottom border-6" role="navigation">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/catLogo.png" alt="Page's Menu" width="35" height="35">
+                    <span>HOME</span>    
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#burgerMenu" aria-controls="burgerMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="burgerMenu">
+                    <nav class="d-flex flex-nowrap z-3 col-10 text-center">
+                        <ul class="d-inline-flex flex-nowrap navbar-nav">
+                            <li class="nav-item">
+                                <a href="./mona.html">
+                                    <img src="./images/MonaProfile.png" alt="MonaProfile" class="rounded-circle" id="MonaProfile">
+                                    <span>Mona</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./tenley.html">
+                                    <img src="./images/TenleyProfile.png" alt="TenleyProfile" class="rounded-circle" id="TenleyProfile">
+                                    <span>Tenley</span>
+                                </a>    
+                            </li>
+                            <li class="nav-item">
+                                <a href="./Maxwell.html">
+                                    <img src="./images/MaxwellProfile.png" alt="MaxwellProfile" class="rounded-circle" id="MaxwellProfile">
+                                    <span>Maxwell</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./Rocky.html">
+                                    <img src="./images/RockyProfile.png" alt="RockyProfile" class="rounded-circle" id="RockyProfile">
+                                    <span>Rocky</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-                <span>Home</span>
-            </li>
-            <li><h1>Tenley</h1></li>
-        </ul>
-        <div class="navigation">
-            <div class="row flex-nowrap no-gutters align-items-center">
-                <div class="col">
-                    <a href="./index.html">
-                        <img src="./images/catLogo.png" alt="Cat Logo">
-                        <span>Home</span>
-                    </a>
-                </div>
-        
-                <nav class="d-flex flex-nowrap z-3 col-10 text-center ">
-                    <ul class="d-inline-flex flex-nowrap">
-                        <li class="nav-item">
-                            <a href="./mona.html">
-                                <img src="./images/MonaProfile.png" alt="MonaProfile" class="rounded-circle" id="MonaProfile">
-                                <span>Mona</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./tenley.html">
-                                <img src="./images/TenleyProfile.png" alt="TenleyProfile" class="rounded-circle" id="TenleyProfile">
-                                <span>Tenley</span>
-                            </a>
-                            
-                        </li>
-                        <li class="nav-item">
-                            <a href="./Maxwell.html">
-                                <img src="./images/MaxwellProfile.png" alt="MaxwellProfile" class="rounded-circle" id="MaxwellProfile">
-                                <span>Maxwell</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./Rocky.html">
-                                <img src="./images/RockyProfile.png" alt="RockyProfile" class="rounded-circle" id="RockyProfile">
-                                <span>Rocky</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
+            </div>   
+        </nav>
     </header>
     <main>
         <div class="sidebar">
@@ -102,7 +90,7 @@
             </div>
         </div>
         <div id="main-content">
-            <h3>Tenley's Biography</h3>
+            <h2>Tenley's Biography</h2>
             <div id="myCarousel" class="carousel slide">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
