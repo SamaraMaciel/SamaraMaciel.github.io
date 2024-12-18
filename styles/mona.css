@@ -64,11 +64,11 @@ ul {
 header div .col {
     margin-left: 2%;
     padding-right: 1px;
-    min-width: 125px;
+    min-width: 90px;
 }
 
  .col-10 {
-    width: 80vmax; /*Keep itens ocuppying 80 of 100 from screen's view */
+    width: 90vmax; /*Keep itens ocuppying 80 of 100 from screen's view */
     padding-right: 20%;
     padding-left: 20%;
 }
@@ -89,6 +89,33 @@ header ul li {
     height: 46px;
 }
 
+nav .nav-bar{
+    background-color: var(--header-bg-color);
+}
+
+#btn-nav{
+    position: absolute;
+    top: 50%;
+    margin-left: 35%;
+    margin-bottom: 15%;
+    transform: translate(-50%,-50%);
+}
+
+.collapse ul{
+    position: absolute;
+    top: 100%;
+    margin-top: 15%;
+    padding-left: 15%;
+    width: 100vb;
+    background-color: var(--footer-bg-color);
+    
+}
+
+.collapsing{
+    height: 0%;
+    transition: 0s;
+}
+
 @media screen and (width <= 1200px){
     .col-10{
         padding-left: 0%;
@@ -107,7 +134,7 @@ header ul li {
     }
 }
 
-@media screen and (width <= 630.40px){
+@media screen and ((width <= 630.40px) and (width > 576px) ){
     header ul {
         padding: 0px;
     }
@@ -116,29 +143,24 @@ header ul li {
         padding-right: 10%;
         padding-left: 10%;
     }
+    .SM2{
+        display: none;
+    }
     header div .col {
         width: 90px;
     }
+    
     header ul li {
         padding-inline: 1%;
     }
 }
 
-@media screen and (width <= 560px){
+@media screen and (width <= 576px){
     header ul {
         padding: 0px;
     }
     .col-10{
-        width: 80%;
-        padding-right: 10%;
-        padding-left: 10%;
-    }
-    header div .col {
-        width: 90px;
-    }
-    header ul li {
-        width:fit-content;
-        padding-inline: 1px;
+        display: none;
     }
 }
 
@@ -147,9 +169,7 @@ header ul li {
         padding: 0px;
     }
     .col-10{
-        width: 80%;
-        padding-right: 10%;
-        padding-left: 0%;
+        display: none;
     }
     header div .col {
         width: 90px;
@@ -165,7 +185,7 @@ header ul li {
     position: fixed;
     top: 74px;
     bottom: 59.5px;
-    width: 25%;
+    width: 30%;
     padding: 0.5%;
     overflow: auto;
     background-color: var(--aside-bg-color);
@@ -180,17 +200,12 @@ header ul li {
     margin-block-start: 5%;
 }
 
-.nav-item.col-md-4{
-    width: max-content;
-    padding-right: 1%;
-    padding-left: 5%;
-}
-.nav-item.col-md-3{
-    width: max-content;
-    padding-right: 1%;
-    padding-left: 5%;
-}
 .nav-item.col-md-5{
+    width: max-content;
+    padding-right: 1%;
+    padding-left: 5%;
+}
+.nav-item.col-md-7{
     width: max-content;
     padding-right: 1%;
     padding-left: 5%;
@@ -217,11 +232,14 @@ header ul li {
     .container li{
         padding: 2% 10%;
     }
+    #card-div-row.row{
+        padding: 0% 5% 0% 5%;
+    }
 }
 /* Finish Overwriting some bs values */
 
 #internal-link1, #internal-link2 {
-    scroll-margin-top: 94px;
+    scroll-margin-top: 87px;
 }
 
 #card.container{
@@ -229,11 +247,18 @@ header ul li {
     padding: 0% 5% 0% 5%;
 }
 
+/* Overwriting some bootstrap values */
 .card {
     width: 100%;
     margin-bottom: 5%;
-    
+    padding-right: 0%;
+    padding-left: 0%;
 }
+
+div .card{
+    margin-inline: 0.75%;
+}
+/* Finish Overwriting some bs values */
 
 .card img {
     width: 100%;
@@ -247,25 +272,26 @@ header ul li {
 
 /* ====== Main ====== */
 #main{
-    margin: 86px 0px 59.5px 25%;
+    margin: 86px 0px 59.5px 30%;
     padding: 20px 15px;
 }
 
 /* Carousel */
 #myCarousel.container {
-    padding: 0% 15% 0% 15%;
-    background-image: url("../images/Mona/catbackground3.png");
+    padding: 0% 0% 0% 0%;
+    /* background-image: url("../images/Mona/catbackground3.png"); */
 }
 
 #myCarousel {
     width: 100%;
-    height: 400px;
+    height: 350px;
 }
 
 .carousel .carousel-inner .carousel-item img{
     width: 100%;
     height: 400px;
 }
+
 /* End Carousel */
 
 /* Form */
@@ -290,6 +316,20 @@ header ul li {
 /* Finish Overwriting some bs values */
 
 /* End form */
+
+@media screen and (width <= 768px) {
+    #myCarousel.container {
+        padding: 0% 15% 0% 15%;
+        background-image: url("../images/Mona/catbackground3.png");
+    }
+    .form-control#FName,#LName{
+        width: 60%;
+    }
+    
+    .input-group{
+        width: 85%;
+    }
+}
 
 /* ====== Footer ====== */
 .footer {

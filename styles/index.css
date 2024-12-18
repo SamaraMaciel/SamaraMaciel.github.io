@@ -139,6 +139,10 @@ header ul li {
     background-color: var(--aside-bg-color) ;
 }
 
+#section1, #section2, #section3 {
+    scroll-margin-top: 87px;
+}
+
 /* ====== Main ====== */
 #main{
     margin: 86px 10px 59.5px 27%;
