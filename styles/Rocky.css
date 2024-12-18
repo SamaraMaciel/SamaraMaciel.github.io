@@ -1,18 +1,303 @@
+/* header */
+header{
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    width:100%;
+    z-index: 2;
+    height: 84px;
+}
+
+header h1 {
+    display:none;
+}
+
+/* nav bar */
+header div .col {
+    margin-left: 2%;
+}
+
+header ul {
+    list-style: none;
+    margin: 2px;
+}
+
+header ul li {
+    width:max-content;
+    padding: 0% 10% 0% 10%;
+}
+
+#MonaProfile, #TenleyProfile, #MaxwellProfile, #RockyProfile {
+    width: 46px;
+    height: 46px;
+}
+
+/* nav{
+    margin-left:25%;
+}
+    not needed, removed to make small screen bar work */
+
+a:link	{
+    display: inline-block;
+    color: black;
+    text-align: center;
+}
+
+a:visited{
+    color: grey;
+}
+
+li a:hover{
+    color: #5A5A5A;
+}
+
+div a:hover{
+    color: #5A5A5A;
+}
+
+ul.navlinks{
+    padding-inline-start: 0px;
+}
+
+
+/* side bar */
+.sidebar{
+    height: 100%; 
+    width: 30%; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    overflow-x: hidden; 
+    padding-top: 150px;
+    padding-bottom: 100px;
+    padding-left:10px;
+    padding-right:10px;
+    overflow-y:hidden ;
+}
+
+#shortscreen-text{
+    display:none;
+}
+
+.sidebar .row{
+    padding-top:10px;
+}
+
+.container{
+    margin-top:20px;
+    margin-bottom:200px;
+}
+
+
+/* main content */
+main{
+    padding-left:35%;
+    padding-top:45px;
+    width:95%;
+
+}
+
+h3{
+    padding-bottom:20px;
+}
+
+#main-content{
+    height:800px;
+}
+
+#myCarousel{
+    width:300px;
+    float:right;
+    z-index: 0;
+    padding-left: 20px;
+    padding-right:20px;
+}
+
+/* footer */
+footer{
+    padding-left:20px;
+    padding-top:20px;
+    background-color: #8b4513;
+    position:fixed;
+    bottom:0;
+    width:100%;
+    color:white;
+    z-index: 2;
+}
+
+
+/* shortscreen navs*/
+.button{
+    background-color: #8b4513;
+    border: none;
+    border-radius: 10px;
+    padding: 7px 0px;
+    margin: 5px;
+    justify-items: center;
+    display: inline-block;
+    cursor: pointer;
+    width: 95px;
+    
+}
+
+.navlinks1 a{
+    color:#f4f3ee;
+}
+.navlinks1 a:hover{
+    color:#bcb8b1;
+}
+
+#shortscreen-card, .navlinks1 {
+    display:none;
+}
+
+
+.navlinks1:hover .dropdowncontent{
+    display: block;
+    align-items: first baseline;
+}
+
+
+#myCarousel, #Biograpy {
+    scroll-margin-top: 60px ;
+}
+
+.dropdowncontent{
+    position: absolute;
+    display: none;
+    align-items: center;
+    z-index: 3;
+}
+
+.dropdowncontent a{
+    display: block;
+    background-color: #bcb8b1;
+    align-items: center;
+    width: 105px;
+    text-decoration: none;
+}
+
+ul.shortscreen{
+    padding-inline-start: 0px;
+    position:fixed;
+    padding-top:15px;
+    display:flex;
+    flex-flow: row;
+}
+
+.shortscreen1, .shortscreen2 {
+    list-style: none;
+    display: none;
+}
+
+.dropdowpages2{
+    position: absolute;
+    display: none;
+}
+
+.dropdowpages2 a{
+    display: block;
+    background-color: #8a817c;
+    align-items: center;
+    width: 105px;
+    text-decoration: none;
+}
+
+
+.shortscreen2:hover .dropdowpages2{
+    display: block;
+    align-items: first baseline;
+}
+
+
+/* media queries */
+@media screen and (width <= 1300px){
+    .sidebar{
+        padding-top:60px;
+    }
+}
+@media screen and (width <= 1000px){
+    /* .navigation{
+        display: none;
+    }
+    header h1{
+        display:inline-block;
+    }
+    .navlinks1{
+        display:inline-block;
+    }
+    .shortscreen1, .shortscreen2 {
+        display: inline-block;
+    } */
+
+    #main-content{
+        height:1300px;
+    }
+    #myCarousel{
+        padding-bottom:20px;
+        width:95%;
+    }
+        
+    .sidebar{
+        padding:100px 0px 0px 0px;
+       
+        overflow: scroll;
+    }
+    .row{
+        padding-top:0px;
+    }
+    .card{
+        width:150px;
+    }
+
+}
+
+@media screen and (width <= 600px) {
+    header{
+        padding-left:180px;
+    }
+    ul.shortscreen{
+        left:10px;
+    }
+
+    .card{
+        width:100%;
+    }
+    #myCarousel{
+        padding-left:0px;
+        padding-right:0px;
+        width:100%;
+    }
+    #main-content{
+        height:1000px;
+    }
+}
+
+@media screen and (width <= 450px) {
+    #main-content{
+        height:1600px;
+    }
+}
+
+
+
+
+
+h1 {
+    display:none;
+}
 
 body{
     --bs-body-bg: #778899;
-    margin: auto;
-    padding: auto;
-
 }
 
 
-nav{
+/* nav {
     height: auto;
     margin: auto;
     padding: auto;
-    justify-content: center;
-}
+} */
 
 h1{
     justify-content: center;
