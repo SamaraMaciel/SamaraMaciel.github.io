@@ -32,11 +32,6 @@ header ul li {
     height: 46px;
 }
 
-/* nav{
-    margin-left:25%;
-}
-    not needed, removed to make small screen bar work */
-
 a:link	{
     display: inline-block;
     color: black;
