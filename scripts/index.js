@@ -3,8 +3,6 @@ let MaxwellValue = 7;
 let TenleyValue = 6;
 let RockyValue = 5;
 
-
-
 function selectFavoritePet(){
     let user_Name = document.getElementById("userName").value;
 
@@ -36,6 +34,7 @@ function clearForm() {
 }
 
 function displayChart(){
+    let user_Name = document.getElementById("userName").value;
     $('#selectform').css('display', 'none');
     new Chart("myChart", {
         type: "bar",
@@ -49,7 +48,7 @@ function displayChart(){
         legend: {display: false},
         title: {
             display: true,
-            text: "Favourite Pets"
+            text: "Hello " + user_Name + "! Favourite Pets's poll:"
         },
         scales: {
             yAxes: [{
