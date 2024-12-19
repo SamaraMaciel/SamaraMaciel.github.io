@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rocky's Page</title>
+    
     <link rel="stylesheet" href="./styles/Rocky.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
 </head>
 
 <body>
     <header class="bg-dark-subtle">
-        <nav class="navbar sticky-top navbar-expand-md border-bottom border-6 bg-dark-subtle" role="navigation">
+        <nav class="navbar navbar-expand-lg bg-dark-subtle">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand link-dark text-body-tertiary" href="index.html">
                     <img src="./images/catLogo.png" alt="Page's Menu" width="35" height="35">
                     <span>HOME</span>    
                 </a>
@@ -25,25 +26,25 @@
                     <nav class="d-flex flex-nowrap z-3 col-10 text-center bg-dark-subtle ">
                         <ul class="d-inline-flex flex-nowrap navbar-nav">
                             <li class="nav-item">
-                                <a href="./mona.html">
+                                <a href="./mona.html" class="link-dark text-body-tertiary">
                                     <img src="./images/MonaProfile.png" alt="MonaProfile" class="rounded-circle" id="MonaProfile">
                                     <span>Mona</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="./tenley.html">
+                                <a href="./tenley.html" class="link-dark text-body-tertiary">
                                     <img src="./images/TenleyProfile.png" alt="TenleyProfile" class="rounded-circle" id="TenleyProfile">
                                     <span>Tenley</span>
                                 </a>    
                             </li>
                             <li class="nav-item">
-                                <a href="./Maxwell.html">
+                                <a href="./Maxwell.html" class="link-dark text-body-tertiary">
                                     <img src="./images/MaxwellProfile.png" alt="MaxwellProfile" class="rounded-circle" id="MaxwellProfile">
                                     <span>Maxwell</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="./Rocky.html">
+                                <a href="./Rocky.html" class="link-dark text-body-tertiary">
                                     <img src="./images/RockyProfile.png" alt="RockyProfile" class="rounded-circle" id="RockyProfile">
                                     <span>Rocky</span>
                                 </a>
@@ -54,13 +55,12 @@
             </div>   
         </nav>
     </header>
-
     <!--Sidebar-->
     <main>
         <div class="sidebar bg-dark">
             <div class="navlinks1">
-                <a class="button" href="#myCarousel">Pictures</a>
-                <a class="button" href="#Biography">Biography</a>
+                <a class="button link-dark text-body-tertiary" href="#myCarousel">Pictures</a>
+                <a class="button link-dark text-body-tertiary" href="#Biography">Biography</a>
             </div>
             <div class="container"> 
                 <div class="row">
@@ -140,10 +140,14 @@
             </div>
         </div>
     </main>
-    <footer class="footer fixed-bottom bg-dark-subtle text-center text-dark ">
-        <p>&copy; 2024. All images supplied by Travis Cattington. Page designed By Sydney Embury.</p>
+    <footer class="footer bg-dark-subtle" id="footer">
+        <div class="copyright">
+            &copy; Copyright 2024 <strong><span>Travis Cattington</span></strong> All Rights Reserved
+        </div>
+        <div class="credits">
+            All images supplied by Travis Cattington. Designed by Sydney Embury
+        </div>
     </footer>
-    
     <script>
         const myCarouselElement = document.querySelector('#myCarousel');
     </script>
