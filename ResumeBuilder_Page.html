@@ -3,18 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laarni Resume Page</title>
+    <title>Resume Builder</title>
     <link rel="stylesheet" href="./styles/ResumeBuilder.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
     <nav class="navbar bg-white">
         <div class="container">
             <div class="navbar-content">
                 <div class="brand-and-toggler">
-                    <a href="index.html" class="navbar-brand">
-                        <img src = "./images/ResumeBuilder_Icon.png" alt = "" class="navbar-brand-icon">
-                        <span class="navbar-brand-text">SLZ <span>resume form</span>
+                    <a href="./index.html" class="navbar-brand">
+                        <img src = "./ResumeBuilder_Icon.png" alt = "" class="navbar-brand-icon">
+                        <span class="navbar-brand-text">SLZ <span>HOME</span>
                     </a>
+                    <ul class="navbar-menu">
+                        <li><a href="#about-sc">About</a></li>
+                        <li><a href="#achievements-sc">Achievements</a></li>
+                        <li><a href="#experience-sc">Experience</a></li>
+                        <li><a href="#education-sc">Education</a></li>
+                        <li><a href="#projects-sc">Projects</a></li>
+                        <li><a href="#skills-sc">Skills</a></li>
+                    </ul>
                     <button type = "button" class="navbar-toggler-btn">
                         <div class="bars">
                             <div class="bar"></div>
@@ -27,16 +36,17 @@
         </div>
     </nav>
 
+    <!-- Resume Page -->
     <section id = "about-sc" class="">
         <div class = "container">
             <div class = "about-cnt">
                 <form action="" class="cv-form" id="cv-form">
                     <!-- About Section -->
                     <div class = "cv-form-blk">
+                        <section id="about-sc"></section>
                         <div class = "cv-form-row-title">
                             <h3>about section</h3>
                         </div>
-
                         <div class="cv-form-row">
                             <!-- Row: Input Fields for First, Middle and Last Name  -->
                             <div class="cols-3">
@@ -93,10 +103,12 @@
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
 
                     <!-- Achievements Section -->
                     <div class="cv-form-blk">
+                        <section id="achievements-sc"></section>
                         <div class="cv-form-row-title">
                             <h3>achievements</h3>
                         </div>
@@ -125,6 +137,7 @@
 
                     <!-- Experience Section -->
                     <div class="cv-form-blk">
+                        <section id="experience-sc"></section>
                         <div class = "cv-form-row-title">
                             <h3>experience</h3>
                         </div>
@@ -165,15 +178,16 @@
                                     <input name = "exp_description" type = "text" class = "form-control exp_description">
                                 </div>
                             </div>
-                            <!-- Delete button/Remove Achievement Entry for JS Later -->
+                            <!-- Delete button/Remove Job Entry for JS Later -->
                             <button type = "button" class = "repeater-remove-btn">-</button>
                         </div>
-                        <!-- Add button/Add Achievement Entry for JS Later -->
+                        <!-- Add button/Add Job Entry for JS Later -->
                         <button type = "button"  class = "repeater-add-btn">+</button>
                     </div>
 
                     <!-- Education Section -->
                     <div class="cv-form-blk">
+                        <section id="education-sc"></section>
                         <div class = "cv-form-row-title">
                             <h3>education</h3>
                         </div>
@@ -223,6 +237,7 @@
                    
                     <!-- Project Section -->
                     <div class="cv-form-blk">
+                        <section id="projects-sc"></section>
                         <div class = "cv-form-row-title">
                             <h3>projects</h3>
                         </div>
@@ -237,7 +252,7 @@
                                 <!-- Enter Project Link -->
                                 <div class = "form-elem">
                                     <label class = "form-label">Project Link</label>
-                                    <input name = "proj_link" type = "date" class = "form-control proj_link" >
+                                    <input name = "proj_link" type = "text" class = "form-control proj_link" >
                                 </div>
                                 <!-- Enter Project Description -->
                                 <div class = "form-elem">
@@ -245,15 +260,16 @@
                                     <input name = "edu_description" type = "text" class = "form-control proj_description">
                                 </div>
                             </div>
-                            <!-- Delete button/Remove School Entry for JS Later -->
+                            <!-- Delete button/Remove Project Entry for JS Later -->
                             <button type = "button" class = "repeater-remove-btn">-</button>
                         </div>
-                        <!-- Add button/Add Achievement School for JS Later -->
+                        <!-- Add button/Add Achievement Project for JS Later -->
                         <button type = "button"  class = "repeater-add-btn">+</button>
                     </div>
                    
                     <!-- Skills Section -->
                     <div class="cv-form-blk">
+                        <section id="skills-sc"></section>
                         <div class = "cv-form-row-title">
                             <h3>skills</h3>
                         </div>
@@ -262,16 +278,31 @@
                                 <label for = "" class = "form-label">Skill</label>
                                 <input name = "skill" type = "text" class = "form-control skill">
                             </div>
-                            <!-- Delete button/Remove School Entry for JS Later -->
+                            <!-- Delete button/Remove Skills Entry for JS Later -->
                             <button type = "button" class = "repeater-remove-btn">-</button>
                         </div>
-                        <!-- Add button/Add Achievement School for JS Later -->
+                        <!-- Add button/Add Achievement Skills for JS Later -->
                         <button type = "button" class = "repeater-add-btn">+</button>
                     </div>
                 </form>
             </div>
         </div>
+       
+        <!-- Resume Preview Link -->
+        <div class ="resume">
+            <div>
+                <!-- Placeholder link to preview resume -->
+                <a href = "resume.html" class = "btn btn-primary text-uppercase">Preview Resume</a>
+            </div>
+        </div>
     </section>
 
+    <footer class = "footer bg-white">
+        <div class="container">
+            <div class = "footer-content">
+                <p>&copy;Copyright 2025. All Rights Reserved - <span>SLZ</span></p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
