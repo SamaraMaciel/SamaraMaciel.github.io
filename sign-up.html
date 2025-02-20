@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/sign-up-sign-in.css">
+
+</head>
+<body class="wrapper">
+    
+    <!-- Start navbar -->
+        <header>
+        <nav class="navbar bg-white">
+            <div class="container">
+                <div class="navbar-content">
+                    <div class="brand-and-toggler">
+                        <a href="index.html" class="navbar-brand">
+                            <img src = "./images/ResumeBuilder_Icon.png" alt = "" class="navbar-brand-icon">
+                            <span class="navbar-brand-text">SLZ <span>resume form</span>
+                        </a>
+                        <div class="btn-set-nav">
+                            <!-- Sign-up button -->
+                            <button type="button" class="nav-btn" id="btn-signUp">
+                                <a href="./sign-up.html" class="btn-anchor">Sign-up</a>
+                            </button>
+                            
+                            <!-- Sign-in button -->
+                            <button type="button" class="nav-btn" id="btn-signIn">
+                                <a href="./sign-in.html" class="btn-anchor">Sign-in</a>
+                            </button>
+                                
+                            <!-- Change color Mode button -->
+                            <button type="button" class="nav-btn" id="btn-mode">Mode</button>
+
+                            <!-- Shrinked view menu button -->
+                            <button type = "button" class="navbar-toggler-btn" id="btn-collapsed-nav">
+                            <div class="bars">
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                            </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        </header>
+    
+    <!-- End navbar -->
+
+    <!-- start page content -->
+    <main class="main-content">
+
+        <section id="section1" class="page-section">
+            <div class="sec1-text-wrapper">
+                <div class="sec1-text-content">
+                    <h1>
+                        Be ahead of your competition with SLZ resume builder! 
+                    </h1>
+                    <p class="p-section1">
+                        <ul class="section1-list">
+                            <li class="section1-list-items">
+                                Easily build your resume and present it to recruiters
+                                by just sharing a link
+                            </li>
+                            <li class="section1-list-items">
+                                Update it any time
+                            </li>
+                            <li class="section1-list-items">
+                                Print a pdf structured format of your Resume
+                            </li>
+                            <li class="section1-list-items">
+                                No more formating different files
+                            </li>
+                            <li class="section1-list-items">
+                                Everything you need in just one place
+                            </li>
+                            <li class="section1-list-items">
+                                Sign-up now and get started
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+                
+            </div>
+            <!-- Sign-up -->
+            <div class="nav-btn-signUp">
+                <!-- form wrapper -->
+                <div class="form-wrapper">
+                    <form action="" class="signUp-form">
+                        <!-- paragraphs -->
+                            <p id="form-p1">Create your account</p>
+                            <p id="form-p2">Fill in your details</p>
+
+                        <!-- name  -->
+                        <div class = "form-elem">
+                            <label class = "form-label" id="lbl-name">
+                                <img src="./images/user-dark-yellow.jpg" alt="" class="form-img" id="user-dark-yellow">
+                            </label>
+                            <input name = "name" type = "text" id="signUp-name"  placeholder="e.g. John">
+                        </div>
+
+                        <!-- email  -->
+                        <div class = "form-elem">
+                            <label class = "form-label" id="lbl-email">
+                                <img src="./images/email-dark-yellow.jpg" alt="" class="form-img" id="email-dark-yellow">
+                            </label>
+                            <input name = "name" type = "text" id="signUp-email"  placeholder="example@domain.com">
+                        </div>
+
+                        <!-- phone  -->
+                        <div class = "form-elem">
+                            <label class = "form-label" id="lbl-phone">
+                                <img src="./images/phone-dark-yellow.jpg" alt="" class="form-img" id="phone-dark-yellow">
+                            </label>
+                            <input name = "name" type = "text" id="signUp-phone"  placeholder="999-999-9999">
+                        </div>
+
+                        <!-- password  -->
+                        <div class = "form-elem">
+                            <label class="form-label" id="lbl-password">
+                                <img src="./images/password-dark-yellow.jpg" alt="" class="form-img" id="password-dark-yellow">
+                            </label>
+                            <input name="name" type="password" id="signUp-password" placeholder="*password">
+                            <button type="button" id="btnShowHide-password" class="show/hide">
+                                <img src="./images/show-pswrd-dark-yellow.jpg" alt="" class="form-img" id="show1-dark-yellow">
+                            </button>
+                        </div>
+
+                        <!-- confirm password  -->
+                        <div class = "form-elem">
+                            <label class = "form-label" id="lbl-confirm-pswrd">
+                                <img src="./images/confirm-pswrd-dark-yellow.jpg" alt="" class="form-img" id="confirm-psword-dark-yellow">
+                            </label>
+                            <input name = "name" type = "password" id="signUp-password-conf" placeholder="*confirm password">
+                            <button type="button" id="btnShowHide-conf-Password" class="show/hide">
+                                <img src="./images/show-pswrd-dark-yellow.jpg" alt="" class="form-img" id="show2-dark-yellow">
+                            </button>
+                        </div>
+
+                        <!-- form buttons  -->
+                        <div class = "form-elem">
+                            <button type="button" class="btn-form" id="btnRegister">Register</button>
+                            <button type="button" class="btn-form" id="btnReset">Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="section2" class="page-section">
+            <div class="sec2-text-wrapper">
+                <div class="sec2-text-content">
+                    <h1>
+                        Be ahead of your competition with SLZ resume builder! 
+                    </h1>
+                    <p class="p-section2">
+                        <ul class="section1-list">
+                            <li class="section1-list-items">
+                                Easily build your resume and present it to recruiters
+                                by just sharing a link
+                            </li>
+                            <li class="section1-list-items">
+                                Update it any time
+                            </li>
+                            <li class="section1-list-items">
+                                Print a pdf structured format of your Resume
+                            </li>
+                            <li class="section1-list-items">
+                                No more formating different files
+                            </li>
+                            <li class="section1-list-items">
+                                Everything you need in just one place
+                            </li>
+                            <li class="section1-list-items">
+                                Sign-up now and get started
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        Add footer content 
+    </footer>
+    
+</body>
+</html>

@@ -6,6 +6,7 @@
     --clr-blue-dark: #1A1C6A;
     --clr-white: #fff;
     --clr-dark: #1e2532;
+    --clr-dar-yellow: #ffc000;
     --row-title-color: yellow;
     --clr-black: #000;
     --font-poppins: 'Poppins', sans-serif;
@@ -21,7 +22,6 @@
 html{
     font-size: 10px;
     background-color: var(--clr-black);
-    /* min-height: min-content; */
 }
 
 .wrapper{
@@ -34,7 +34,7 @@ body{
     font-family: var(--font-poppins);
 }
 .main-content{
-    margin: 10% 5% 10% 5%;
+    margin: 80px 5% 10% 5%;
     min-height: 100vh;
 }
 
@@ -133,24 +133,11 @@ img{
     border-radius: 8%;
     background-color: var(--clr-blue-mid);
 }
-/* Use this to add the nav-bar for collapsed button */
-.nav-btn-signUp, .nav-btn-signIn{
-    width: 100%;
-    position: absolute;
-    top: 100px;
-    z-index: 99;
-    left: 0;
-    right: 0;
-    background: var(--bg);
-    box-shadow: 0px 1px 5px 0px rgba(15, 25, 40, .2);
-    padding: 0 0 0 35px;
-    min-height: 568px;
-    display: none;
-}
 .btn-anchor{
     text-decoration: none;
     color: var(--clr-black);
 }
+
 /********** menu button - shrinked view **********/
 button#btn-collapsed-nav{
     display: none;
@@ -167,6 +154,142 @@ button#btn-collapsed-nav{
 /*********** Body sections ***********/
 .page-section{
     color: var(--clr-white);
+    display: flex;
+    
+}
+/******** start form ********/
+.nav-btn-signUp, .nav-btn-signIn{
+    /* width: 40%; */
+    left: 0;
+    right: 0;
+    background: var(--clr-black);
+    box-shadow: 0px 1px 5px 0px rgba(15, 25, 40, .2);
+}
+.form-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--clr-white);
+    border-radius: 8%;
+    min-width: 470px;
+    max-width: 600px;
+}
+
+#form-p1, #form-p2{
+    color: var(--clr-black);
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+#form-p1{
+    font-size:larger;
+    font-weight: 700;
+    color: var(--clr-dar-yellow);
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+#form-p2{
+    font-size: small;
+    margin-bottom: 10px;
+}
+
+.form-elem{
+    display: flex;
+    padding: 5%;
+}
+#lbl-name, #lbl-email, #lbl-phone, #lbl-password, #lbl-confirm-pswrd{
+    width: 29px;
+}
+input{
+    width: 300px;
+}
+.form-img{
+    width: 25px;
+    height: 25px;
+}
+.btn-form{
+    background-color: var(--clr-dar-yellow);
+    
+}
+#btnRegister, #btnReset{
+    width: 100px;
+    padding: 3%;
+    border-radius: 5%;
+    margin: auto;
+}
+.btn-form:hover{
+    background-color: var(--clr-blue-mid);
+    color: var(--clr-white);
+    font-weight: 600;
+}
+
+@media screen and (width <= 992px) {
+    .nav-btn-signUp, .nav-btn-signIn{
+        width: 100%;
+        margin: auto;
+    }
+    .form-wrapper{
+        margin: auto;
+        min-width: 470px;
+        max-width: 470px;
+    }
+    .sec1-text-wrapper{
+        display: none;
+    }
+    .page-section#section2{
+        display: flex;
+    }
+    .sec2-text-wrapper{
+        margin: auto;
+    }
+    .sec2-text-content{
+        margin-top: 30px;
+        padding: 1% 5% 5% 5%;
+    }
+    .p-section2{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (width <= 768px) {
+    .nav-btn-signUp, .nav-btn-signIn{
+        width: 100%;
+        margin: auto;
+    }
+    
+    .form-wrapper{
+        margin: auto;
+        min-width: 340px;
+        max-width: 470px;
+    }
+    .sec1-text-wrapper{
+        display: none;
+    }
+    .page-section#section2{
+        display: flex;
+    }
+  
+}
+/******** end form ********/
+
+.sec1-text-wrapper{
+    width: 60%;   
+}
+#section2{
+    display: none;
+}
+.sec1-text-content{
+    padding: 1% 5% 5% 5%;
+}
+.p-section1{
+    margin-top: 30px;
+}
+.section1-list{
+    list-style-image: url("../images/check-img-yellow.jpg");
+    margin-left: 5%;
+}
+.section1-list-items{
+    padding-bottom: 5%;
 }
 
 /*********** Footer ***********/
