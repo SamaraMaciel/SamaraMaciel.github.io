@@ -44,6 +44,7 @@ button{
     outline: 0;
     cursor: pointer;
     font-family: inherit;
+    font-size: 1.6rem;
 }
 
 /*********** bars button ***********/
@@ -101,13 +102,18 @@ img{
     align-items: center;
     justify-content: flex-start;
     font-size: 1.8rem;
+    text-decoration: none;
 }
 .navbar-brand-text{
     color: var(--clr-dark);
     font-weight: 600;
 }
-.navbar-brand-text span{
-    color: var(--clr-blue);
+.navbar-brand:hover{
+    background-color: var(--clr-dar-yellow);
+    text-decoration: none;
+    .navbar-brand-text{
+        color: var(--clr-white);
+    }
 }
 .navbar-brand-icon{
     width: 25px;
@@ -301,5 +307,33 @@ input{
     background-color: var(--clr-white);
     color: var(--clr-black);
     border-top: 1px solid var(--clr-blue);
+}
+.footer-paragraph{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size:x-large;
+}
+.footer-logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-brand{
+    text-decoration: none;
+    color: var(--clr-black);
+}
+.footer-logo{
+    width: 80px;
+    height: 40px;
+}
+.footer-brand:hover{
+    font-weight: 600;
+    .footer-logo-container{
+        background-color: var(--clr-dar-yellow);
+    }
+}
+.footer-list-items:hover{
+    color: var(--clr-dar-yellow);
 }
 
