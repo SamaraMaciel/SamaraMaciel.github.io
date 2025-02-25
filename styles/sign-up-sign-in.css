@@ -158,9 +158,9 @@ button#btn-collapsed-nav{
     padding-top: 10px;
     position: fixed;
     width: 150px;
-    height: 200px;
+    height: 220px;
     right: 0px;
-    top: 80px;
+    top: 30px;
     background-color: var(--clr-dar-yellow);
 }
 .dropdown-menu a{
