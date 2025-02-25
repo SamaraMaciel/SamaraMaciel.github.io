@@ -34,7 +34,7 @@ body{
     font-family: var(--font-poppins);
 }
 .main-content{
-    margin: 80px 5% 10% 5%;
+    margin: 80px 10% 10% 10%;
     min-height: 100vh;
 }
 h1{
@@ -93,11 +93,19 @@ img{
 }
 
 /********** navbar ***********/
+header{
+    position: sticky;
+    top: 0px;
+}
 .navbar{
+    position: sticky;
+    top: 0px;
     height: 80px;
     display: flex;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.08) 0px 3px 8px;
+    z-index: 1000; 
+    background-color: var(--clr-white);
 }
 .navbar .container{
     width: 100%;
@@ -151,7 +159,7 @@ img{
     color: var(--clr-dar-yellow);
 }
 #about-us, #services, #portifolios{
-    scroll-margin-top: 30px;
+    scroll-margin-top: 87px;
 }
 .btn-set-nav{
     display: flex;
@@ -167,34 +175,62 @@ img{
     border-radius: 8%;
     background-color: var(--clr-blue-mid);
 }
-/* Use this to add the nav-bar for collapsed button */
-.nav-btn-signUp, .nav-btn-signIn{
-    width: 100%;
-    position: absolute;
-    top: 100px;
-    z-index: 99;
-    left: 0;
-    right: 0;
-    background: var(--bg);
-    box-shadow: 0px 1px 5px 0px rgba(15, 25, 40, .2);
-    padding: 0 0 0 35px;
-    min-height: 568px;
-    display: none;
-}
 .btn-anchor{
     text-decoration: none;
     color: var(--clr-black);
 }
-/********** menu button - shrinked view **********/
+/********** menu button - collapsed view **********/
 button#btn-collapsed-nav{
     display: none;
 }
+.dropdown-menu{
+    display: none;
+}
+.dropdown-menu{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    position: fixed;
+    width: 150px;
+    height: 200px;
+    right: 0px;
+    top: 80px;
+    background-color: var(--clr-dar-yellow);
+}
+.dropdown-menu a{
+    color: var(--clr-black);
+    text-decoration: none;
+}
+.dropdown-menu-items{
+    padding-bottom: 10px;
+}
+#dmi-sign-up, #dmi-sign-in{
+    padding: 5px 5px 5px 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: var(--clr-blue-mid);
+}
+.dropdown-menu a:hover{
+    color: var(--clr-white);
+    font-weight: 600;
+}
+.dropdown-menu #dmi-sign-up:hover{
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+}
 @media screen and (width <= 768px) {
+    .internal-links{
+        display: none;
+    }
     button#btn-collapsed-nav{
         display: flex;
     }
     .nav-btn{
         display: none;
+    }
+    button.navbar-toggler-btn:hover .dropdown-menu{
+        display: flex;
     }
 }
 

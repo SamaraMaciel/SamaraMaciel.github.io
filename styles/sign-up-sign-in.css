@@ -34,7 +34,7 @@ body{
     font-family: var(--font-poppins);
 }
 .main-content{
-    margin: 80px 5% 10% 5%;
+    margin: 80px 10% 10% 10%;
     min-height: 100vh;
 }
 
@@ -144,16 +144,58 @@ img{
     color: var(--clr-black);
 }
 
-/********** menu button - shrinked view **********/
+/********** menu button - collapsed view **********/
 button#btn-collapsed-nav{
     display: none;
 }
+.dropdown-menu{
+    display: none;
+}
+.dropdown-menu{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    position: fixed;
+    width: 150px;
+    height: 200px;
+    right: 0px;
+    top: 80px;
+    background-color: var(--clr-dar-yellow);
+}
+.dropdown-menu a{
+    color: var(--clr-black);
+    text-decoration: none;
+}
+.dropdown-menu-items{
+    padding-bottom: 10px;
+}
+#dmi-sign-up, #dmi-sign-in{
+    padding: 5px 5px 5px 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: var(--clr-blue-mid);
+}
+.dropdown-menu a:hover{
+    color: var(--clr-white);
+    font-weight: 600;
+}
+.dropdown-menu #dmi-sign-up:hover{
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+}
 @media screen and (width <= 768px) {
+    .main-content{
+        margin: 80px 5% 10% 5%;
+    }
     button#btn-collapsed-nav{
         display: flex;
     }
     .nav-btn{
         display: none;
+    }
+    button.navbar-toggler-btn:hover .dropdown-menu{
+        display: flex;
     }
 }
 
@@ -227,6 +269,18 @@ input{
     background-color: var(--clr-blue-mid);
     color: var(--clr-white);
     font-weight: 600;
+    /* This line is for the anchor placeholder - project delivery 1
+        It won't be necessary once we have javascript
+    */
+    a{
+        color: var(--clr-white);
+        font-weight: 600;
+    }
+    
+}
+.btn-form a{
+    text-decoration: none;
+    color: var(--clr-black);
 }
 
 @media screen and (width <= 992px) {
