@@ -53,7 +53,7 @@
         }
 
         .bars {
-            display: flex;
+            display: none;
             flex-direction: column;
             justify-content: space-between;
             height: 16.5px;
@@ -160,14 +160,16 @@
             color: var(--clr-white);
         }
 
-        /* Ensure consistency for all sections */
         .resume .cv-form-row {
-            padding: 3rem 2rem 0 2rem;
+            padding: 3rem 2rem;  
             border: 1px solid rgba(0, 0, 0, 0.08);
             margin-bottom: 2rem;
             position: relative;
             background-color: var(--clr-dark);
-        }
+            max-width: 1200px;  
+            margin-left: auto; 
+            margin-right: auto; 
+                }
 
         .cv-form-row-title {
             background-color: var(--clr-yellow);
@@ -192,13 +194,6 @@
             content: "•";
             color: var(--clr-blue);
             margin-right: 8px;
-        }
-
-
-        .cols-2 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
         }
 
         ul {
@@ -256,6 +251,7 @@
         }
         .cv-form-row .table {
             width: 100%;
+            table-layout: fixed;
             border-collapse: collapse;
             margin-top: 1rem;
         }
@@ -265,6 +261,7 @@
             padding: 0.8rem;
             text-align: left;
             border: 1px solid rgba(0, 0, 0, 0.1);
+            word-wrap: break-word; 
         }
 
         .cv-form-row .table th {
@@ -273,16 +270,187 @@
         }
 
         /* Footer */
-        .footer {
-            padding: 2rem 0;
-            background-color: var(--clr-black);
-        }
-
-        .footer-content p {
+        .footer{
+            bottom: 0;
+            width: 100%;
+            padding: 5px 0;
             text-align: center;
-            color: var(--clr-white);
+            background-color: var(--clr-white);
+            color: var(--clr-black);
+            border-top: 1px solid var(--clr-blue);
         }
+        .footer-paragraph{
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-weight: 700;
+            font-size:x-large;
+        }
+        .footer-logo-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .footer-brand{
+            text-decoration: none;
+            color: var(--clr-black);
+        }
+        .footer-logo{
+            width: 80px;
+            height: 40px;
+        }
+        .footer-brand:hover{
+            font-weight: 600;
+            .footer-logo-container{
+                background-color: var(--clr-dar-yellow);
+            }
+        }
+        .footer-list-items:hover{
+            color: var(--clr-dar-yellow);
+        }
+        
+        @media (max-width: 1024px) {
+            .navbar {
+                height: 70px;
+            }
+        
+            .resume .cv-form-row {
+                width: 90%; 
+            }
+        
+            .cv-form-row-title {
+                font-size: 1.8rem; 
+            }
+        
+            h1 {
+                font-size: 2.5rem; 
+            }
+        
+            .about-grid {
+                display: block; 
+            }
+        
+            .about-item {
+                margin-bottom: 1rem;
+            }
 
-        .footer-content p span {
-            color: var(--clr-blue);
+            .profile-pic {
+                width: 250px; 
+                height: 250px;
+            }
+            .navbar-menu li {
+                padding: 0%;
+                display: inline-block;
+                font-size: smaller;
+            }
+            .navbar-menu a {
+                padding: 0px;
+            }
+        /* Media Query for Mobile Devices (screens with width less than 600px) */
+        @media (max-width: 600px) {
+            .navbar {
+                height: 60px; 
+            }
+        
+            /* Adjust layout for mobile */
+            .resume .cv-form-row {
+                width: 90%; 
+            }
+        
+            .cv-form-row-title {
+                font-size: 1.6rem; 
+            }
+        
+            h1 {
+                font-size: 2rem; 
+            }
+        
+            .profile-pic {
+                width: 200px; 
+                height: 200px;
+            }
+        
+            .about-item span {
+                font-size: 1.4rem; 
+            }
+        
+            .about-item p {
+                font-size: 1.4rem; 
+            }
+        
+            .about-grid {
+                display: block;
+            }
+        
+            .about-item {
+                margin-bottom: 1rem; 
+            }
+
+            .cv-form-row ul li {
+                font-size: 1.4rem; 
+            }
+            .navbar-menu {
+                display: none; 
+                flex-direction: column; 
+                width: 100%;
+                text-align: center;
+            }
+        
+            .navbar-menu.active {
+                display: flex; 
+            }
+        
+            .navbar-toggler-btn {
+                display: block; 
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                z-index: 1001;
+            }
+
+            .bars {
+                display: flex;
+                margin-left: 2rem;
+            }
+        
+            .navbar-menu li {
+                width: 100%;
+                padding: 10px;
+            }
+        
+            .navbar-menu a {
+                display: block;
+                padding: 10px;
+            }
+            .cv-form-row .table {
+                width: 100%; 
+            }
+        
+            .cv-form-row {
+                overflow-x: auto;
+            }
         }
+        
+        /* Extra Large Screens (e.g., Desktop with width 1200px or more) */
+        @media (min-width: 1200px) {
+            .resume .cv-form-row {
+                padding: 4rem 3rem; 
+            }
+        
+            h1 {
+                font-size: 3.5rem; 
+            }
+        
+            .cv-form-row-title {
+                font-size: 2.2rem; 
+            }
+        
+            .profile-pic {
+                width: 350px;
+                height: 350px;
+            }
+        
+            .about-item p {
+                font-size: 1.8rem; 
+            }
+        }
+    }
