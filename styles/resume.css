@@ -74,6 +74,7 @@
         /* Navbar */
         .navbar {
             height: 80px;
+            width: 100%;
             display: flex;
             align-items: center;
             box-shadow: rgba(0, 0, 0, 0.08) 0px 3px 8px;
@@ -114,11 +115,12 @@
             list-style: none;
             padding: 0;
             margin: 0;
-            gap: 25px;
+            gap: 30px;
         }
 
         .navbar-menu li {
             display: inline-block;
+            list-style: none;
         }
 
         .navbar-menu a {
@@ -142,7 +144,7 @@
             align-items: center;
             justify-content: space-between;
         }
-
+        
         /* Resume Profile Section */
         .resume {
             padding: 3rem 0;
@@ -349,6 +351,7 @@
         @media (max-width: 600px) {
             .navbar {
                 height: 60px; 
+                width: 100%;
             }
         
             /* Adjust layout for mobile */
@@ -409,7 +412,7 @@
 
             .bars {
                 display: flex;
-                margin-left: 2rem;
+                margin-left: auto;
             }
         
             .navbar-menu li {
