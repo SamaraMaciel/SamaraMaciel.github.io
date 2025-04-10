@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Resume</title>
+  <title>Resume Preview</title>
+  
+  <link rel="stylesheet" href="./styles/resumeView.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="./scripts/viewScript.js"></script>
+
+</head>
+<body>
+  <div class="resume-container" id="resumeDisplay">
+    <h1 id="fullname"></h1>
+    <h2 id="designation"></h2>
+    <p id="contact-info"></p>
+    <h3 id="summary"></h3>
+
+    <section>
+      <h3>ACHIEVEMENTS</h3>
+      <ul><li><i><strong id="achieve-title"></strong></i></li>
+      <p><i id="achieve-description"></i></p></ul>
+    </section>
+
+    <section>
+      <h3>EXPERIENCE</h3>
+      <p><i><strong id="exp-title"></strong></i> at <span id="exp-organization"></span>, <span id="exp-location"></span></p>
+      <p><em><span id="exp-start-date"></span> - <span id="exp-end-date"></span></em></p>
+      <p id="exp-description"></p>
+    </section>
+
+    <section>
+      <h3>EDUCATION</h3>
+      <p><i><strong id="edu-degree"></strong></i>, <span id="edu-school"></span> (<span id="edu-city"></span>)</p>
+      <p><em><span id="edu-start-date"></span> - <span id="edu-graduation-date"></span></em></p>
+      <p id="edu-description"></p>
+    </section>
+
+    <section>
+      <h3>PROJECTS</h3>
+      <p><i><strong id="proj-title"></strong></i></p>
+      <p><a id="proj-link" href="#" target="_blank"></a></p>
+      <p id="proj-description"></p>
+    </section>
+
+    <section>
+      <h3>SKILLS</h3>
+      <p id="skill"></p>
+    </section>
+  </div>
+
+</body>
+</html>

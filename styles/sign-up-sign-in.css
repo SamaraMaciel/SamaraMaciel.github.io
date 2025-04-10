@@ -259,7 +259,7 @@ input{
     background-color: var(--clr-dar-yellow);
     
 }
-#btnRegister, #btnReset{
+#btnRegister, #btnReset, #btnSignIn{
     width: 100px;
     padding: 3%;
     border-radius: 5%;

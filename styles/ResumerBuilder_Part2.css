@@ -164,6 +164,13 @@ a{
     margin-right: 1rem!important;
 }
 
+#generate-json-btn{
+    background-color: var(--clr-blue-mid);
+    color: var(--clr-white);
+    border: 1px solid var(--clr-blue-mid);
+    transition: var(--transition);
+}
+
 /* navbar part */
 .navbar{
     height: 80px;

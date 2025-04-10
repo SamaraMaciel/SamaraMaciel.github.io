@@ -62,17 +62,17 @@
                                 <!-- Entering First Name -->
                                 <div class = "form-elem">
                                     <label class = "form-label">First Name</label>
-                                    <input name = "first name" type = "text" class = "form-control firstname"  placeholder="e.g. Juan">
+                                    <input name = "firstname" type = "text" class = "form-control firstname"  placeholder="e.g. Juan">
                                 </div>
                                  <!-- Entering Middle Name (optional) -->
                                 <div class = "form-elem">
                                     <label class = "form-label">Middle Name<span class="opt-text">(optional)</span></label>
-                                    <input name = "middle name" type = "text" class = "form-control middlename" placeholder="e.g. optional">
+                                    <input name = "middlename" type = "text" class = "form-control middlename" placeholder="e.g. optional">
                                 </div>
                                  <!-- Entering Last Name -->
                                 <div class = "form-elem">
                                     <label class = "form-label">Last Name</label>
-                                    <input name = "last name" type = "text" class = "form-control lastname"  placeholder="e.g. Cruz">
+                                    <input name = "lastname" type = "text" class = "form-control lastname"  placeholder="e.g. Cruz">
                                 </div>
                             </div>
                             <!-- Row: Uploading Image and Entering Designation/Address  -->
@@ -266,7 +266,7 @@
                                 <!-- Enter Project Description -->
                                 <div class = "form-elem">
                                     <label class = "form-label">Project Descriptions</label>
-                                    <input name = "edu_description" type = "text" class = "form-control proj_description">
+                                    <input name = "proj_description" type = "text" class = "form-control proj_description">
                                 </div>
                             </div>
                             <!-- Delete button/Remove Project Entry for JS Later -->
@@ -293,17 +293,30 @@
                         <!-- Add button/Add Achievement Skills for JS Later -->
                         <button type = "button" class = "repeater-add-btn">+</button>
                     </div>
+                    <!-- <div>
+                        <button type="button" id="generate-json-btn">Generate Resume</button>
+                    </div> -->
+                    <div class ="resume">
+                        <div>
+                            <!-- Placeholder link to preview resume -->
+                            <!-- <a href = " " class = "btn btn-primary text-uppercase">Preview Resume</a> -->
+                            <button type="button" class = "btn btn-primary text-uppercase" id="preview-btn">Preview Resume</button>
+                            <button type="button" class = "btn btn-primary text-uppercase" id="generate-json-btn">Save Resume</button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
        
         <!-- Resume Preview Link -->
-        <div class ="resume">
-            <div>
+        <!-- <div class ="resume">
+            <div> -->
                 <!-- Placeholder link to preview resume -->
-                <a href = " " class = "btn btn-primary text-uppercase">Preview Resume</a>
+                <!-- <a href = " " class = "btn btn-primary text-uppercase">Preview Resume</a> -->
+                <!-- <button type="button" class = "btn btn-primary text-uppercase" id="preview-btn">Preview Resume</button>
+                <button type="button" class = "btn btn-primary text-uppercase" id="generate-json-btn">Save Resume</button>
             </div>
-        </div>
+        </div> -->
     </section>
 
     <footer class="footer">
@@ -335,5 +348,8 @@
             </ul>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./scripts/ResumeBuilder_Page.js"></script>  
 </body>
 </html>
