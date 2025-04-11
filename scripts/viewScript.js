@@ -3,10 +3,6 @@ $(document).ready(function () {
     const resumeData = JSON.parse(localStorage.getItem('resumeData'));
 
     if (resumeData) {
-        // Full name
-        // const fullName = `${resumeData.firstname} ${resumeData.middlename} ${resumeData.lastname}`;
-        // console.log(fullName);
-        // $('#fullname').text(fullName.trim());
 
         $('#fullname').text(`${resumeData.firstname} ${resumeData.middlename} ${resumeData.lastname}`);
         console.log(resumeData.firstname, resumeData.middlename, resumeData.lastname);
