@@ -42,6 +42,28 @@ $(document).ready(function () {
         });
     });
 
+    // Show/hide password button funtion
+    $("#btnShowHide-password").click(function() {
+    
+        if ($(this).hasClass("show/hide")) {
+            $("#signUp-password").attr("type", "text");
+        } else {
+            $("#signUp-password").attr("type", "password");
+        }
+        $(this).toggleClass("show/hide");
+    });
+
+       // Show/hide confirm password button funtion
+       $("#btnShowHide-conf-Password").click(function() {
+    
+        if ($(this).hasClass("show/hide")) {
+            $("#signUp-password-conf").attr("type", "text");
+        } else {
+            $("#signUp-password-conf").attr("type", "password");
+        }
+        $(this).toggleClass("show/hide");
+    });
+
     $("#btnReset").on("click", function () {
         $(".signUp-form")[0].reset();
     });

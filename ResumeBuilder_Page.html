@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume Builder</title>
     <link rel="stylesheet" href="./styles/ResumeBuilder.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -293,9 +295,31 @@
                         <!-- Add button/Add Achievement Skills for JS Later -->
                         <button type = "button" class = "repeater-add-btn">+</button>
                     </div>
-                    <!-- <div>
-                        <button type="button" id="generate-json-btn">Generate Resume</button>
-                    </div> -->
+
+                    <!-- Notes section -->
+                    <div class="cv-form-blk" >
+                        <section id="Notes-sc"></section>
+                        <div class = "cv-form-row-title">
+                            <h3>Notes</h3>
+                        </div>
+                        <div id="tabs">
+                            <ul>
+                                <li><a href="#tab1">Note 1</a></li>
+                                <li><a href="#tab2">Note 2</a></li>
+                            </ul>
+                            <div id="tab1">
+                                <div id="resizable" class="ui-widget-content">
+                                    <input name = "note1" type = "text" class = "form-control">
+                                </div>
+                                
+                            </div>
+                            <div id="tab2">
+                                <input name = "note1" type = "text" class = "form-control">
+                            </div>
+                        </div>
+                    </div>
+
+
                     <div class ="resume">
                         <div>
                             <!-- Placeholder link to preview resume -->
@@ -308,15 +332,7 @@
             </div>
         </div>
        
-        <!-- Resume Preview Link -->
-        <!-- <div class ="resume">
-            <div> -->
-                <!-- Placeholder link to preview resume -->
-                <!-- <a href = " " class = "btn btn-primary text-uppercase">Preview Resume</a> -->
-                <!-- <button type="button" class = "btn btn-primary text-uppercase" id="preview-btn">Preview Resume</button>
-                <button type="button" class = "btn btn-primary text-uppercase" id="generate-json-btn">Save Resume</button>
-            </div>
-        </div> -->
+
     </section>
 
     <footer class="footer">
@@ -350,6 +366,8 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <script src="./jquery-ui-1.14.1.custom/jquery-ui.js"></script>
     <script src="./scripts/ResumeBuilder_Page.js"></script>  
 </body>
 </html>

@@ -31,6 +31,28 @@ const API_URL = "http://localhost:3000/users";
       });
     });
 
+       // Show/hide password button funtion
+       $("#btnShowHide-password").click(function() {
+    
+        if ($(this).hasClass("show/hide")) {
+            $("#signIn-password").attr("type", "text");
+        } else {
+            $("#signIn-password").attr("type", "password");
+        }
+        $(this).toggleClass("show/hide");
+    });
+
+       // Show/hide confirm password button funtion
+       $("#btnShowHide-conf-Password").click(function() {
+    
+        if ($(this).hasClass("show/hide")) {
+            $("#signIn-password-conf").attr("type", "text");
+        } else {
+            $("#signIn-password-conf").attr("type", "password");
+        }
+        $(this).toggleClass("show/hide");
+    });
+
     $(".signIn-form #btnReset").on("click", function () {
       $(".signIn-form")[0].reset();
     });

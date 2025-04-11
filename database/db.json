@@ -20,6 +20,13 @@
       "email": "zyen@yahoo.com",
       "phone": "098-765-4321",
       "password": "lalala"
+    },
+    {
+      "id": "9044",
+      "name": "sasas",
+      "email": "sasa@gmail.com",
+      "phone": "999-999-9999",
+      "password": "1234"
     }
   ],
   "save-cv": [
@@ -100,6 +107,32 @@
       "proj_link": "eh",
       "proj_description": "eh",
       "skill": "none"
+    },
+    {
+      "id": "9e04",
+      "firstname": "grgwgwrg",
+      "middlename": "gwgwgwr",
+      "lastname": "gwgwg",
+      "designation": "gwgwg",
+      "address": "wgwg",
+      "email": "wrgwgwgwrg",
+      "phoneno": "wgwgwrg",
+      "achieve_title": "wgwgwrg",
+      "achieve_description": "wgwgwrg",
+      "exp_title": "wgwgw",
+      "exp_organization": "wgwgw",
+      "exp_location": "wrgwgwrgw",
+      "exp_start_date": "2025-04-03",
+      "exp_end_date": "2025-04-04",
+      "exp_description": "wgwrgwrgwr",
+      "edu_school": "wggwgwrgw",
+      "edu_degree": "wgwgwgwg",
+      "edu_start_date": "2025-04-17",
+      "edu_description": "aaegagadgadga",
+      "proj_title": "adafdag",
+      "proj_link": "agdadgadg",
+      "proj_description": "adgagagadg",
+      "skill": "fhfshdhfsd"
     }
   ]
 }

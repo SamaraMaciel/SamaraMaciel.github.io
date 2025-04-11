@@ -33,6 +33,46 @@ body{
     font-size: 1.6rem;
     font-family: var(--font-poppins);
 }
+/* Toggle light-mode js function */
+body.light-mode{
+    background-color: var(--clr-white);
+    color: var(--clr-black);
+    .a-internal-links-items{
+        color: var(--clr-white);
+    }
+    .btn-anchor{
+        color: var(--clr-white);
+    }
+    #btn-mode{
+        color: var(--clr-white);
+    }
+    .navbar{
+        background-color: var(--clr-black);
+        box-shadow: rgba(0, 0, 0, 0.08) 0px 3px 8px;
+        color: var(--clr-white);
+    }
+    .navbar-brand-text{
+        color: var(--clr-white);
+    }
+    h1, p, h2{
+        color: var(--clr-black);
+    }
+    .a-internal-links-items:hover{
+        color: var(--clr-dar-yellow);
+    }
+    .footer{
+        background-color: var(--clr-black);
+        color: var(--clr-white);
+    }
+    .footer-brand{
+        color: var(--clr-white);
+    }
+    .footer-paragraph{
+        color: var(--clr-white);
+    }
+}
+
+
 .main-content{
     margin: 80px 10% 10% 10%;
     min-height: 100vh;
@@ -155,6 +195,9 @@ header{
     color: var(--clr-black);
     padding: 10px;
 }
+/* .a-internal-links-items,.light-mode{
+    color: var(--clr-white);
+} */
 .a-internal-links-items:hover{
     color: var(--clr-dar-yellow);
 }
@@ -169,6 +212,11 @@ header{
 #btn-signUp, #btn-signIn, #btn-mode{
     padding: 5px 10px 5px 10px;
 }
+/* #btn-signUp, #btn-signIn, #btn-mode,.light-mode{
+    background-color: var(--clr-white);
+    border-radius: 8%;
+    margin-right: 3px;
+} */
 #btn-signUp:hover, #btn-signIn:hover, #btn-mode:hover{
     font-weight:500;
     color: var(--clr-black);
@@ -179,6 +227,9 @@ header{
     text-decoration: none;
     color: var(--clr-black);
 }
+/* .btn-anchor, .light-mode{
+    color: var(--clr-white);
+} */
 /********** menu button - collapsed view **********/
 button#btn-collapsed-nav{
     display: none;
